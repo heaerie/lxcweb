@@ -1,0 +1,26 @@
+{
+  "name": "weblxc",
+  "version": "1.0.0",
+  "description": "Node Web Lxc/lxd",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heaerie/lxcweb.git"
+  },
+  "keywords": [
+    "lxcweb"
+  ],
+  "author": "Jayagopal Govindaraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heaerie/lxcweb/issues"
+  },
+  "homepage": "https://github.com/heaerie/lxcweb#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "node-lxd": "^0.2.8"
+  }
+}

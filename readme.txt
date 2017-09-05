@@ -1,0 +1,1 @@
+lxc image alias create trusty 04aac4257341

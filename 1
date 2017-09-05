@@ -1,0 +1,14 @@
+var lxd = require("node-lxd");
+ 
+var client = lxd();
+ 
+client.create("myContainer", "ubuntu", function(err, container) {
+	if (err) {
+		console.log(err);
+	} else {
+	    container.start(function(err) {
+		if (!err)
+		    console.log("Started " + container.name());
+	    });
+	}
+});
