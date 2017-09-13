@@ -62,8 +62,10 @@ app.get("/run", function(req, res) {
         }
     });
 });
+
+app.use(express.static(__dirname+'/public'));
  
-app.listen(3001, function(err) {
+app.listen(3000, function(err) {
     if (!err)
-        console.log("listening on port 3001");
+        console.log("listening on port 3000");
 });
