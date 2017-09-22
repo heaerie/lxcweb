@@ -49,8 +49,9 @@ app.get("/create", function(req, res) {
 });
  
 app.get("/run", function(req, res) {
-    if (!containers.hasOwnProperty(req.query.name)) {
-        res.json({success: false, message: "Container does not exist"});
+	console.log(containers);	
+   if (!containers.hasOwnProperty(req.query.name)) {
+        res.json({success: false, message: req.query.name +  " Container does not exist"});
         return;
     }
  

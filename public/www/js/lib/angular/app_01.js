@@ -548,6 +548,8 @@ $stateProvider.state('result',
 
              'pageMainContext' :
               {                
+               
+                //template : heaerieUssServiceProvider.GenHtmlTemplateFromSJson('N')
                templateUrl : 'js/lib/views/naviView.html'
                ,controller :  'naviController'
               }
@@ -556,6 +558,7 @@ $stateProvider.state('result',
               'pageSubContext@result' :
               {                
                 template : heaerieUssServiceProvider.GenHtmlTemplateFromSJson('result','Y' ,'BACK')
+                  // template:'<div id="" class="bcontainer" tabindex="-1"><div id="" class="bheader" tabindex="-1"><a>Signature Verify </a></div><div id="" class="bsession" tabindex="-1"><div class="row tableRow" style="margin-left: 0px;margin-right: 0px;" tabindex="-1"><div class="clearfix visible-xs-block"></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><label class="chlabel" for="signatureVerify"></label></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><div id="signatureVerifyErrorBox"></div><input type="hidden" name="signatureVerify" class="clabel" xml="Y" mndf="N" datatype="CONTAINER" htmltype="CONTAINER" id="signatureVerify" maxlength="60" min="0" value="" maxcol="1" col="0" dflt="" errorbox="signatureVerifyErrorBox" label="" title="" xpath="$SingnatureVerify.signatureVerify" onclick="onClick(this);" onblure="onBlure(this);" onkeydown="onKeyDown(this);" onkeyup="onKeyUp(this);" onkeypress="onKeyPress(this);" onchange="onChange(this);" task="NONE" parent="SingnatureVerify" xmlname="signatureVerify" container="Y" readonly="true"><span></span><script></script></div><div class="clearfix visible-xs-block"></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><label class="chlabel" for="tirack">TIRACK</label></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><div id="tirackErrorBox"></div><input type="TEXT" name="USS_tirack" class="clabel" xml="Y" mndf="N" datatype="VARCHAR" htmltype="TEXT" id="tirack" ng-model="$SingnatureVerify.signatureVerify.tirack" maxlength="60" min="0" value="" maxcol="1" col="0" dflt="" errorbox="tirackErrorBox" label="TIRACK" title="" xpath="$SingnatureVerify.signatureVerify.tirack" onclick="onClick(this);" onblure="onBlure(this);" onkeydown="onKeyDown(this);" onkeyup="onKeyUp(this);" onkeypress="onKeyPress(this);" onchange="onChange(this);" task="NONE" parent="signatureVerify" xmlname="tirack" container="N" readonly="true"><span></span><script></script></div></div><div class="row tableRow" style="margin-left: 0px;margin-right: 0px;" tabindex="-1"><div class="clearfix visible-xs-block"></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><label class="chlabel" for="sender">Sender</label></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><div id="senderErrorBox"></div><input type="TEXT" name="USS_sender" class="clabel" xml="Y" mndf="N" datatype="VARCHAR" htmltype="TEXT" id="sender" ng-model="$SingnatureVerify.signatureVerify.sender" maxlength="60" min="0" value="" maxcol="1" col="1" dflt="" errorbox="senderErrorBox" label="Sender" title="" xpath="$SingnatureVerify.signatureVerify.sender" onclick="onClick(this);" onblure="onBlure(this);" onkeydown="onKeyDown(this);" onkeyup="onKeyUp(this);" onkeypress="onKeyPress(this);" onchange="onChange(this);" task="NONE" parent="signatureVerify" xmlname="sender" container="N" readonly="true"><span></span><script></script></div><div class="clearfix visible-xs-block"></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><label class="chlabel" for="receiver">Receiver</label></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><div id="receiverErrorBox"></div><input type="TEXT" name="USS_receiver" class="clabel" xml="Y" mndf="N" datatype="VARCHAR" htmltype="TEXT" id="receiver" ng-model="$SingnatureVerify.signatureVerify.receiver" maxlength="60" min="0" value="" maxcol="1" col="2" dflt="" errorbox="receiverErrorBox" label="Receiver" title="" xpath="$SingnatureVerify.signatureVerify.receiver" onclick="onClick(this);" onblure="onBlure(this);" onkeydown="onKeyDown(this);" onkeyup="onKeyUp(this);" onkeypress="onKeyPress(this);" onchange="onChange(this);" task="NONE" parent="signatureVerify" xmlname="receiver" container="N" readonly="true"><span></span><script></script></div><div class="clearfix visible-xs-block"></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><label class="chlabel" for="amount">Amount</label></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><div id="amountErrorBox"></div><input type="TEXT" name="USS_amount" class="clabel" xml="Y" mndf="N" datatype="VARCHAR" htmltype="TEXT" id="amount" ng-model="$SingnatureVerify.signatureVerify.amount" maxlength="60" min="0" value="" maxcol="1" col="3" dflt="" errorbox="amountErrorBox" label="Amount" title="" xpath="$SingnatureVerify.signatureVerify.amount" onclick="onClick(this);" onblure="onBlure(this);" onkeydown="onKeyDown(this);" onkeyup="onKeyUp(this);" onkeypress="onKeyPress(this);" onchange="onChange(this);" task="NONE" parent="signatureVerify" xmlname="amount" container="N" readonly="true"><span></span><script></script></div><div class="clearfix visible-xs-block"></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><label class="chlabel" for="currency">Currency</label></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><div id="currencyErrorBox"></div><input type="TEXT" name="USS_currency" class="clabel" xml="Y" mndf="N" datatype="VARCHAR" htmltype="TEXT" id="currency" ng-model="$SingnatureVerify.signatureVerify.currency" maxlength="60" min="0" value="" maxcol="1" col="4" dflt="" errorbox="currencyErrorBox" label="Currency" title="" xpath="$SingnatureVerify.signatureVerify.currency" onclick="onClick(this);" onblure="onBlure(this);" onkeydown="onKeyDown(this);" onkeyup="onKeyUp(this);" onkeypress="onKeyPress(this);" onchange="onChange(this);" task="NONE" parent="signatureVerify" xmlname="currency" container="N" readonly="true"><span></span><script></script></div><div class="clearfix visible-xs-block"></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><label class="chlabel" for="intermediateBic">Intermediate Bic</label></div><div id="td" class="col-md-6 col-sm-6 col-xs-12"><div id="intermediateBicErrorBox"></div><input type="TEXT" name="USS_intermediateBic" class="clabel" xml="Y" mndf="N" datatype="VARCHAR" htmltype="TEXT" id="intermediateBic" ng-model="$SingnatureVerify.signatureVerify.intermediateBic" maxlength="60" min="0" value="" maxcol="1" col="5" dflt="" errorbox="intermediateBicErrorBox" label="Intermediate Bic" title="" xpath="$SingnatureVerify.signatureVerify.intermediateBic" onclick="onClick(this);" onblure="onBlure(this);" onkeydown="onKeyDown(this);" onkeyup="onKeyUp(this);" onkeypress="onKeyPress(this);" onchange="onChange(this);" task="NONE" parent="signatureVerify" xmlname="intermediateBic" container="N" readonly="true"><span></span><script></script></div></div></div></div>'
                  ,controller :  'resultController'
               }
             }
@@ -565,16 +568,25 @@ $stateProvider.state('result',
         });
 
 
- $stateProvider.state('signup', {
+ $stateProvider.state('signup', 
+        {
             url         : '/signup/'
            ,views:{
-              'pageMainContext' : {                
-		       templateUrl : 'js/lib/views/signupView.html'
-		       ,controller :  'signupController'
-              },
-
-              'pageSubContext@signup' : {                
+              'pageMainContext' :
+              {                
                
+                //template : heaerieUssServiceProvider.GenHtmlTemplateFromSJson('N')
+               templateUrl : 'js/lib/views/signupView.html'
+               ,controller :  'signupController'
+              }
+              ,
+
+              'pageSubContext@signup' :
+              {                
+               
+                //template : heaerieUssServiceProvider.GenHtmlTemplateFromSJson('basicDet','N',"FULL") //EIDT and ADD
+                //template : 'this is test'
+               // templateUrl : 'js/lib/views/dashboardView.html',controller :  'dashboardController'
                 template:  "<center> <div style='width:600px'>" + heaerieUssServiceProvider.GenHtmlTemplateFromSJson('signup','Y',"REGISTER|BACK") + "</div> </center>"
                ,controller :  'signupController'
               }
@@ -720,19 +732,41 @@ webApp.provider('$dashboardState', function($stateProvider,heaerieUssServiceProv
 
         this.$get = function($state){
             return {
-              addState : function(title, controllerAs, templatePrefix) {
+                /**
+                 * @function app.dashboard.dashboardStateProvider.addState
+                 * @memberof app.dashboard
+                 * @param {string} title - the title used to build state, url & find template
+                 * @param {string} controllerAs - the controller to be used, if false, we don't add a controller (ie. 'UserController as user')
+                 * @param {string} templatePrefix - either 'content', 'presentation' or null
+                 * @author Alex Boisselle
+                 * @description adds states to the dashboards state provider dynamically
+                 * @returns {object} user - token and id of user
+                 */
+                addState: function(title, controllerAs, templatePrefix) {
+
+                   /* $stateProvider.state('dashboard.' + title, {
+                        url: '/' + title,
+                        views: {
+                            'dashboardModule@dashboard': {
+                                templateUrl: PATHS.DASHBOARD + (templatePrefix ? templatePrefix + '/' : '/') + title + '/' + title + '.view.html',
+                                controller: controllerAs ? controllerAs : null
+                            }
+                        }
+                    });
+*/
+
+           // alert('dynamic State Add');
               $stateProvider.state('basicDetUSSNavi', {
 		    	url : '/basicDetUSSNavi'
-		   	,views : { 
-				'pageMainContext' : {                
-				       templateUrl : 'js/lib/views/naviView.html'
-				},
-				'pageSubContext@basicDetUSSNavi' : {                
-					template : heaerieUssServiceProvider.GenHtmlTemplateFromSJson('basicDet','Y','SAVE')
-					,controller :  'basicDetController'//template : 'this is test'
-              			}
-            		}
-        	});
+		   	,views : { 'pageMainContext' : {                
+			       templateUrl : 'js/lib/views/naviView.html'
+			},
+		      'pageSubContext@basicDetUSSNavi' : {                
+				template : heaerieUssServiceProvider.GenHtmlTemplateFromSJson('basicDet','Y','SAVE')
+                ,controller :  'basicDetController'//template : 'this is test'
+              }
+            }
+        });
 
 
 
@@ -771,6 +805,24 @@ webApp.run(['$rootScope','$q', '$injector' , '$window', function($rootScope,$q, 
          
     }
 }]);
+
+
+/*
+
+
+   */
+
+/*
+
+
+    webApp.config(['$resourceProvider', function($resourceProvider) {
+  // Don't strip trailing slashes from calculated URLs
+  alert('alert config');
+  $resourceProvider.defaults.stripTrailingSlashes = false;
+}]);
+
+*/
+
 
     return webApp;
 });

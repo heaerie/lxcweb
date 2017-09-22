@@ -13,13 +13,12 @@ function()
       {
 
 
-           $window.sessionStorage.setItem("firstName"  ,"Money Bank Admin");
+            $window.sessionStorage.setItem("firstName"  ,"LXD/LXC Admin");
             $window.sessionStorage.setItem("grpName"    ,"NA");
-            $window.sessionStorage.setItem("firstName"  ,"DURAIMURUGAN");
             $window.sessionStorage.setItem("lastName"   ,"GOVINDARAJ");
             $window.sessionStorage.setItem("prodVersion","1");
-            $window.sessionStorage.setItem("prtlName"   ,"Money Bank");
-            $window.sessionStorage.setItem("prodName"   , "Luna SP");
+            $window.sessionStorage.setItem("prtlName"   ,"LXD/LXC Admin");
+            $window.sessionStorage.setItem("prodName"   , "Ampule");
             $window.sessionStorage.setItem("usrId"      ,"1");
             $window.sessionStorage.setItem("grpId"      ,"1");
 
@@ -41,35 +40,18 @@ function()
                     }
                     ,
                     {
-                    'link' :'sendMessage'
+                    'link' :'createContainer'
 
-                    ,'linkName' :'Send Message'
-                    ,'uid'  :'sendMessage1'
+                    ,'linkName' :'Create Container'
+                    ,'uid'  :'createContainer'
                     , 'dataType' :'NODE'
                     ,'child'  : []
                     }
                     ,
                     {
                     'link' :'SchemaGenerator'
-
                     ,'linkName' :'SchemaGenerator'
                     ,'uid'  :'SchemaGenerator'
-                    , 'dataType' :'NODE'
-                    ,'child'  : []
-                    }
-                     ,
-                    {
-                    'link' :'signatureVerify'
-                    ,'linkName' :'Signature Verify'
-                    ,'uid'  :'signatureVerify'
-                    , 'dataType' :'NODE'
-                    ,'child'  : []
-                    }
-					,
-                    {
-                    'link' :'inbox'
-                    ,'linkName' :'inbox'
-                    ,'uid'  :'inbox'
                     , 'dataType' :'NODE'
                     ,'child'  : []
                     }
