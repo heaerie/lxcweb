@@ -7,32 +7,27 @@
  **/
 define([
     './loginService'
-    ,'./basicDetService'
+    ,'./createContainerService'
     ,'./dashboardService'
     ,'./signupService'
     ,'./SchemaGeneratorService'
-    ,'./keyBoardService'
-    ,'./sendMessageService'
-    ,'./msgContentPrevService'
-    ,'./signatureVerifyService'
-    ,'./resultService'
-], function (loginService,basicDetService,dashboardService,signupService,SchemaGeneratorService,keyBoardService,sendMessageService,msgContentPrevService,signatureVerifyService,resultService) {
+], function (loginService, 
+		createContainerService,
+		dashboardService,
+		signupService,
+		SchemaGeneratorService
+		) {
     'use strict';
 
     console.log(angular);
 
     var services= angular.module('services', ['ngRoute','ngResource']);
-        services.factory("loginService",loginService);
-        services.factory("dashboardService",dashboardService);
-        services.factory("basicDetService",basicDetService);
-        services.factory("signupService",signupService);
-        services.factory("SchemaGeneratorService",SchemaGeneratorService);
-        services.factory("keyBoardService",keyBoardService);
-        services.factory("sendMessageService",sendMessageService);
-        services.factory("msgContentPrevService",msgContentPrevService);
-        services.factory("signatureVerifyService",signatureVerifyService);
-        services.factory("resultService",resultService);
-  
+        services.factory("loginService", loginService);
+        services.factory("dashboardService", dashboardService);
+        services.factory("createContainerService", createContainerService);
+        services.factory("signupService", signupService);
+        services.factory("SchemaGeneratorService", SchemaGeneratorService);
+ 
 
     return services;
 });

@@ -6,34 +6,22 @@
  **/
 define([
     './loginController'
-    ,'./basicDetController'
+    ,'./createContainerController'
     ,'./dashboardController'
-    ,'./SchemaGeneratorController'
     ,'./naviController'
     ,'./signupController'
-    ,'./keyBoardController'
-    ,'./sendMessageController'
-    ,'./msgContentPrevController'
-    ,'./signatureVerifyController'
-    ,'./resultController'
-], function (loginController,basicDetController,dashboardController,SchemaGeneratorController,naviController,signupController,keyBoardController,sendMessageController,msgContentPrevController,signatureVerifyController,resultController) {
+], function (loginController, 
+	createContainerController, 
+	dashboardController, 
+	naviController,
+	signupController) {
     'use strict';
 
-    //console.log(angular);
-
     var controllers= angular.module('controllers', []);
-        controllers.controller("loginController",loginController);
+        controllers.controller("loginController", loginController);
+        controllers.controller("createContainerController", createContainerController);
         controllers.controller("dashboardController",dashboardController);
-        controllers.controller("basicDetController",basicDetController);
-        controllers.controller("SchemaGeneratorController",SchemaGeneratorController);
         controllers.controller("naviController",naviController);
         controllers.controller("signupController",signupController);
-        controllers.controller("keyBoardController",keyBoardController);
-        controllers.controller("sendMessageController",sendMessageController);
-        controllers.controller("msgContentPrevController",msgContentPrevController);
-        controllers.controller("signatureVerifyController",signatureVerifyController);
-        controllers.controller("resultController",resultController);
-  
-
     return controllers;
 });

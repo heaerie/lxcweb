@@ -2,16 +2,14 @@ define([],
 function()
 {
 
-  return [ '$scope' , 'toaster','loginService','$state' ,'$dashboardState' ,'$window',function($scope,toaster,loginService,$state,$dashboardState,$window){
+  return [ '$scope' , 'toaster', 'loginService', '$state', '$window', function($scope,toaster,loginService,$state,$window){
 
     $scope.login=function()
     {
       alert("login control");
     }
 
-    $scope.uss_submit=function()
-      {
-
+	$scope.uss_submit=function() {
 
             $window.sessionStorage.setItem("firstName"  ,"LXD/LXC Admin");
             $window.sessionStorage.setItem("grpName"    ,"NA");
@@ -67,7 +65,7 @@ function()
             $state.go('dashboard');
         
 
-       //A alert("I am in uss_submit");
+       alert("I am in uss_submit");
       };
       $scope.uss_auth=function()
       {
