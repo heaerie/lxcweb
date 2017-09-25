@@ -45,15 +45,6 @@ function()
                     , 'dataType' :'NODE'
                     ,'child'  : []
                     }
-                    ,
-                    {
-                    'link' :'SchemaGenerator'
-                    ,'linkName' :'SchemaGenerator'
-                    ,'uid'  :'SchemaGenerator'
-                    , 'dataType' :'NODE'
-                    ,'child'  : []
-                    }
-
                   ]
                 }
                          

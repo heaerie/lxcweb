@@ -6,7 +6,7 @@ var app = express();
  
 var containers = {};
  
-app.get("/list", function(req, res) {
+app.get("/api/dashboard/list", function(req, res) {
 	client.containers(function(err, containers) {
 		if (err) {
 			res.json({success: false, message: err.getMessage()});
@@ -23,6 +23,26 @@ app.get("/list", function(req, res) {
 			res.json({success: true, "containers": out});
 		}
 	});
+
+});
+
+app.post("/api/dashboard/list", function(req, res) {
+    client.containers(function(err, containers) {
+        if (err) {
+            res.json({success: false, message: err.getMessage()});
+        } else {
+            var out = [];
+            containers.forEach(function(obj) {
+                out.push({ 
+                    name :obj.name()
+                    , ipv4 :obj.ipv4()
+                    , ipv6 :obj.ipv6()
+                    , state : obj.state()
+                });
+            });
+            res.json({success: true, "containers": out});
+        }
+    });
 
 });
 

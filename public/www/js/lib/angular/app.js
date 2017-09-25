@@ -204,30 +204,6 @@ define([
 	}]);
 
         }]);
-/*.
-	webApp.provider('$dashboardState', function($stateProvider,heaerieUssServiceProvider){
-		this.$get = function($state){
-		return {
-			addState: function(title, controllerAs, templatePrefix) {
-			$stateProvider.state('basicDetUSSNavi', {
-			url : '/basicDetUSSNavi'
-			,views : {
-				'pageMainContext' : {
-				       templateUrl : 'js/lib/views/naviView.html'
-			}       
-		      ,
-		      'pageSubContext@basicDetUSSNavi' :
-		      {
-			template : heaerieUssServiceProvider.GenHtmlTemplateFromSJson('basicDet','Y','SAVE')
-			,controller :  'basicDetController'//template : 'this is test'
-		      }
-		    }
-		});
-                }
-            }
-        }
-    });
-*/
 
 angular.module('dialogDemo3', ['ngMaterial'])
   .config(function ($mdThemingProvider) {

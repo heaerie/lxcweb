@@ -1,263 +1,35 @@
-define([],
-function()
-{
+define([], function() {
 
-	return [ '$scope' , 'toaster','dashboardService','$state','$window',function($scope,toaster,dashboardService,$state, $window){
+return [ '$scope' , 'toaster','dashboardService','$state','$window',function($scope,toaster,dashboardService,$state, $window) {
+  $scope.usrId    =     $window.sessionStorage.getItem("usrId"  );
+  $scope.grpId    =     $window.sessionStorage.getItem("grpId"  );
 
+  $scope.getContainer= function() {
 
+      dashboardService.list({}, function (resp) {
+ //toaster.pop('success','this', JSON.stringify(resp));
 
-$scope.usrId    =     $window.sessionStorage.getItem("usrId"  );
-$scope.grpId    =     $window.sessionStorage.getItem("grpId"  );
+        $scope.containers=resp.containers;
+       });
+  }
 
-$scope.$CardDetail=[];
-		$scope.login=function()
-		{
-			alert("login control");
-		}
+  $scope.$watch('$viewContentLoaded', function(){
+    $scope.containers=[];
+    $scope.getContainer();
 
-
-	$scope.getCardDetail=function() {
-
-     // console.log(  $scope.$CardDetail);
-
-        console.log($scope.$CardDetail);
-        
-          dashboardService.getCardDetail({     "grantType"     : "password" 
-                      ,'clientId'    :'CLIENTSP'
-                      ,'scope'       : 'GSA'
-                      ,'usrId'    : $scope.usrId
-                      ,'grpId'    : $scope.grpId
-                      //,'password'    : $scope.password
-                      ,'redirectURI' : 'http://localhost:5000/'
-
-                      },function  (resp) {
-
-          var USS=require("ufi.core").USS;
-          var ufiframegen=require("ufi.frameGen");
-          var ufivalidate=require("ufi.validate");
-          var $=require("jquery");
-
-
-          var us= new ufiframegen.FG();
-          var val= new ufivalidate.VAL();
-
-
-          var schemaJson=[];
-
-
-
-//console.log('resp:');
-//console.log(resp);
-
-          schemaJson= resp.schemaJson;
-          OutJson= resp.jsonData;
-
-          GenHtmlTemplateFromSJson =USS;
-
-
-
-
-          // alert(GenHtmlTemplateFromSJson);
-
-          var usResource= eval(    "[{" +us.frameGenerationResoure(schemaJson[0].childs,
-          schemaJson[0]
-          )  +"}]" );
-
-
-          var  usListVal=eval("[{"+us.frameGenerationListVal(schemaJson[0].childs,
-          schemaJson[0]
-          )  + "}]"); 
-
-          var func='Y';
-          var mode ='VIEW';
-          //alert(func);
-          var inpUsListVal  = eval("usListVal[0]."+ schemaJson[0].name) ;
-          var inpUsResource = eval("usResource[0]."+ schemaJson[0].name) ;
-          var inpOutJson    = eval("OutJson[0]."+ schemaJson[0].name) ;
-          var ussScript=us.frameGeneration(inpUsListVal
-          ,inpUsResource
-          ,inpOutJson 
-          ,schemaJson[0].childs
-          ,schemaJson[0]
-          ,0
-          ,func
-          ,0
-          ,mode
-          );
-
-
-          ussScript+="return USSContainer0";
-          console.log('-------------ussScript------------');
-          console.log(ussScript);
-
-          // try
-          {
-          var dynFGCall=(new Function("return function(us,val) {" + ussScript + "};"))();
-
-          var appendObj=dynFGCall(us,val);
-
-          console.log('appendObj.innerHTML');
-          console.log(appendObj.innerHTML);
-
-          //return "<div> thsis dashboard from heaerieUssServiceProvider </div>";
-          document.getElementById('getCardDetailView').innerHTML="";
-          document.getElementById('getCardDetailView').appendChild(appendObj);
-
-          }
-          }
-
-          );
-
-        //alert("I am in uss_submit");
-      };
-
-
-	$scope.getUserDetail=function() {
-        
-    			dashboardService.getUserDetail({     "grantType"     : "password" 
-    									,'clientId'    :'CLIENTSP'
-    									,'scope'       : 'GSA'
-                      ,'usrId'    : $scope.usrId
-                      ,'grpId'    : $scope.grpId
-                      
-    									//,'username'    : $scope.email
-    									//,'password'    : $scope.password
-    									,'redirectURI' : 'http://localhost:5000/'
-
-    									},function  (resp) {
-
-         var USS=require("ufi.core").USS;
-   var ufiframegen=require("ufi.frameGen");
-   var ufivalidate=require("ufi.validate");
-   var $=require("jquery");
-
-
-   var us= new ufiframegen.FG();
-   var val= new ufivalidate.VAL();
-
-
-var schemaJson=[];
-
-
-
-console.log('resp:');
-console.log(resp);
-
-schemaJson= resp.schemaJson;
-OutJson= resp.jsonData;
-
-    GenHtmlTemplateFromSJson =USS;
-
-    
-
-
-   // alert(GenHtmlTemplateFromSJson);
-
-   var usResource= eval(    "[{" +us.frameGenerationResoure(schemaJson[0].childs,
-  schemaJson[0]
-)  +"}]" );
-
-
-var  usListVal=eval("[{"+us.frameGenerationListVal(schemaJson[0].childs,
-    schemaJson[0]
-)  + "}]"); 
-
-var func='Y';
-var mode ='VIEW';
-//alert(func);
-var inpUsListVal  = eval("usListVal[0]."+ schemaJson[0].name) ;
-var inpUsResource = eval("usResource[0]."+ schemaJson[0].name) ;
-var inpOutJson    = eval("OutJson[0]."+ schemaJson[0].name) ;
-var ussScript=us.frameGeneration(inpUsListVal
-                                              ,inpUsResource
-                                              ,inpOutJson 
-                                              ,schemaJson[0].childs
-                                              ,schemaJson[0]
-                                              ,0
-                                              ,func
-                                              ,0
-                                              ,mode
-                                          );
-
-
-  ussScript+="return USSContainer0";
-    console.log('-------------ussScript------------');
-    console.log(ussScript);
-
-   // try
-    {
-      var dynFGCall=(new Function("return function(us,val) {" + ussScript + "};"))();
-   
-      var appendObj=dynFGCall(us,val);
-
-       console.log('appendObj.innerHTML');
-      console.log(appendObj.innerHTML);
-
-      //return "<div> thsis dashboard from heaerieUssServiceProvider </div>";
-      document.getElementById('getUserDetailView').innerHTML="";
-    document.getElementById('getUserDetailView').appendChild(appendObj);
-     
-    }
-
-
-        ///// end
-
-    			//console.log(resp);
-    		//	toaster.pop('success','this', JSON.stringify(resp));
-
-    			//alert('resp');
-    		}
-
-        );
-
-    		//alert("I am in uss_submit");
-    	};
-    	
-//$scope.getUserDetail();
-
-      $scope.uss_auth=function()
-    	{
-    			loginService.authorizeSSO({     "grantType"     : "password"
-    			/*loginService.authorizeSSO({     "grantType"     : "password" */
-    									,'clientId'    :'CLIENTSP'
-    									,'scope'       : 'GSA'
-    									,'username'    : 'durai145@live.in'
-    									,'password'    : '1qaz2wsx'
-    									,'redirectURI' : 'http://localhost:5000/'
-
-    									},function  (resp) {
-    			// body...
-    			console.log(resp);
-    			toaster.pop('success','this', JSON.stringify(resp));
-    			//alert('resp');
-    		});
-
-
-
-       
-
-    		//alert("I am in uss_submit");
-    	};
-
-         $scope.$watch('$viewContentLoaded', function(){
-    //Here your view content is fully loaded !!
-   // 2 alert('on viewContentLoaded watch');
-    //$scope.getUserDetail();
-    //$scope.getCardDetail();
-  });
-
-         /* $scope.$on('$viewChangeSuccess', function(){
-    //Here your view content is fully loaded !!
-    alert('on viewContentLoaded');
-    //$scope.getUserDetail();
-  });*/
-
-
-          angular.element(document).ready(function () {
-   // 1 alert('page loading completed');
 });
-	}];
-	
+
+/* $scope.$on('$viewChangeSuccess', function(){
+//Here your view content is fully loaded !!
+alert('on viewContentLoaded');
+//$scope.getUserDetail();
+});*/
+
+  angular.element(document).ready(function () {
+ //   alert('page loading completed');
+  });
+}];
+
 });
 
 /*[
@@ -308,53 +80,3 @@ var ussScript=us.frameGeneration(inpUsListVal
     };
 
 ]*/
-
-angular.module('dialogDemo3', ['ngMaterial'])
-  .config(function ($mdThemingProvider) {
-    $mdThemingProvider.theme('red')
-      .primaryPalette('red');
-
-    $mdThemingProvider.theme('blue')
-      .primaryPalette('blue');
-
-  })
-.controller('AppCtrl', function($scope, $mdDialog, $interval) {
-  $scope.theme = 'red';
-
-  var isThemeRed = true;
-
-  $interval(function () {
-    $scope.theme = isThemeRed ? 'blue' : 'red';
-
-    isThemeRed = !isThemeRed;
-  }, 2000);
-
-  $scope.showAdvanced = function(ev) {
-    $mdDialog.show({
-      controller: DialogController,
-      templateUrl: 'dialog1.tmpl.html',
-      parent: angular.element(document.body),
-      targetEvent: ev,
-      clickOutsideToClose:true
-    })
-    .then(function(answer) {
-      $scope.status = 'You said the information was "' + answer + '".';
-    }, function() {
-      $scope.status = 'You cancelled the dialog.';
-    });
-  };
-
-  function DialogController($scope, $mdDialog) {
-    $scope.hide = function() {
-      $mdDialog.hide();
-    };
-
-    $scope.cancel = function() {
-      $mdDialog.cancel();
-    };
-
-    $scope.answer = function(answer) {
-      $mdDialog.hide(answer);
-    };
-  }
-});

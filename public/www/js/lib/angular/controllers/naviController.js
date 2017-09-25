@@ -15,13 +15,13 @@ function()
 		$scope.prodName    =     $window.sessionStorage.getItem("prodName"  );
 
 	treeNodeOnclick=function(objId) {
-		alert("alert" + objId);
+//		alert("alert" + objId);
 		 $("."+objId).toggle(400);
 
 	}
 
 	$scope.$watch('$viewContentLoaded', function(){
-		alert('I am in navi');
+//		alert('I am in navi');
 
 		GenTreeView(eval($window.sessionStorage.getItem("treeViewJson")), 'dashboard');
   
