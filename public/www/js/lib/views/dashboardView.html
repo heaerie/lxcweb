@@ -80,7 +80,7 @@
 			<center> Containers  </center>	
 		
 					<div class="row tableRow " >
-							<div id="td" class="col-md-9 col-sm-2 col-xs-2">
+							<div id="td" class="col-md-12 col-sm-12 col-xs-12">
 								<!--div class="pageLayout ng-scope"--> 
 									<div class="bcontainer">
 										<div id="" class="bheader" tabindex="-1">
@@ -89,21 +89,21 @@
 															<div class="clearfix visible-sm"></div>
 															<div class="clearfix visible-md"></div>
 											
-														<div id="td" class="col-md-2 col-sm-2 col-xs-2">
+														<div id="td" class="col-md-2 col-sm-4 col-xs-4">
 														<div class="binboxheader">
 															<div id="sendMessageErrorBox"></div>
 																<i class="fa fa-plus" aria-hidden="true"></i> 
 																<span class="TreeNodeText">New </span>
 															</div>
 														</div>
-														<div id="td" class="col-md-2 col-sm-2 col-xs-2">
+														<div id="td" class="col-md-2 col-sm-4 col-xs-4">
 														<div class="binboxheader">
 															<div id="sendMessageErrorBox"></div>
 																<i class="fa fa-play" aria-hidden="true"></i>
 																<span class="TreeNodeText">start </span>
 															</div>
 														</div>
-														<div id="td" class="col-md-2 col-sm-2 col-xs-2">
+														<div id="td" class="col-md-2 col-sm-4 col-xs-4">
 														<div class="binboxheader">
 														<div id="sendMessageErrorBox"></div>
 															<i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -114,32 +114,47 @@
 										</div>
 										
 										<div id="row tableRow" class="bsession" tabindex="-1" data-ng-repeat="container in containers">	
-										<div class="clearfix visible-xs"></div>
-													<div class="clearfix visible-sm"></div>
-													<div class="clearfix visible-md"></div>
-													
-												<div class="row tableRow">
-												</div>
+											<div class="clearfix visible-xs"></div>
+											<div class="clearfix visible-sm"></div>
+											<div class="clearfix visible-md"></div>
 												
-												<div class="row tableRow">
+													<div class="row tableRow"></div>
+												
+													<div class="row tableRow">
 													<div class="clearfix visible-xs"></div>
 													<div class="clearfix visible-sm"></div>
 													<div class="clearfix visible-md"></div>
 													
-													<div class="col-md-1 col-sm-1 col-xs-1">
+													<div class="col-md-2 col-sm-3 col-xs-3">
 														<input type="checkbox">
 													</div>
-													<div class="col-md-3 col-sm-3 col-xs-3">
+													<div class="col-md-2 col-sm-3 col-xs-3">
 														<label class="clabel">  {{container.name}} </label>
 													</div>
-													<div class="col-md-3 col-sm-3 col-xs-3">
+													<div class="col-md-2 col-sm-3 col-xs-3">
 														<label class="clabel">  {{container.ipv4}} </label>
 													</div>
+													<div class="col-md-2 col-sm-3 col-xs-3">
+														<label class="clabel">  {{container.state.status}} </label>
+													</div>
 
-													
+										
+													<div ng-show="container.state.status == 'Running'" class="col-md-2 col-sm-3 col-xs-3">
+															<label class="clabel"> 
+																<div class="binboxheader" ng-click="openTerminal(container.ipv4)">
+																		<i class="fa fa-terminal" aria-hidden="true"></i>
+																	<span class="TreeNodeText">Terminal</span>
+																</div>
+															</label>
+
+														</div>
+													</div>
 												</div>
-											</div>
 										</div>
 								<!--/div-->
 							</div>
+							<div class="container">
+  
+
+</div>
 </div><!-- End demo -->

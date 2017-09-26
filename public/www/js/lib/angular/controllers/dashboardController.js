@@ -10,6 +10,7 @@ return [ '$scope' , 'toaster','dashboardService','$state','$window',function($sc
  //toaster.pop('success','this', JSON.stringify(resp));
 
         $scope.containers=resp.containers;
+        $scope.server = resp.server;
        });
   }
 
@@ -24,6 +25,12 @@ return [ '$scope' , 'toaster','dashboardService','$state','$window',function($sc
 alert('on viewContentLoaded');
 //$scope.getUserDetail();
 });*/
+
+$scope.openTerminal=function(host) {
+
+   // alert("openTerminal");
+    window.open("http://ec2-18-221-41-112.us-east-2.compute.amazonaws.com:3001/wetty/terminal/" + host + "/ubuntu");
+}
 
   angular.element(document).ready(function () {
  //   alert('page loading completed');

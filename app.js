@@ -20,7 +20,7 @@ app.get("/api/dashboard/list", function(req, res) {
                     , state : obj.state()
 				});
 			});
-			res.json({success: true, "containers": out});
+			res.json({success: true, "containers": out, "server" : "localhost"});
 		}
 	});
 
@@ -88,5 +88,5 @@ app.use(express.static(__dirname+'/public'));
  
 app.listen(3000, function(err) {
     if (!err)
-        console.log("listening on port 3000");
+        console.log( "listening on port 3000");
 });
