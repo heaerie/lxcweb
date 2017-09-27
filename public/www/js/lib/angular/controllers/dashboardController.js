@@ -20,6 +20,9 @@ return [ '$scope' , 'toaster','dashboardService','$state','$window',function($sc
 
 });
 
+$scope.gotoCreateContainer=function() {
+  $state.go("createContainer");
+}
 /* $scope.$on('$viewChangeSuccess', function(){
 //Here your view content is fully loaded !!
 alert('on viewContentLoaded');

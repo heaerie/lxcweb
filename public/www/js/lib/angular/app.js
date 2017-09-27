@@ -119,15 +119,15 @@ define([
 		});
 
 		$stateProvider.state('createContainer', {
-			url : '/CreateContainer/'
+			url : '/createContainer/'
 			,views : {
 				'pageMainContext' : {                
 					templateUrl : 'js/lib/views/naviView.html'
 					,controller :  'naviController'
 				},
 				'pageSubContext@createContainer' : {                
-					template : "create container"
-					,controller :  'createContainer'
+					templateUrl : "js/lib/views/createContainerView.html"
+					,controller :  'createContainerController'
 				}
 			},
 			params : {

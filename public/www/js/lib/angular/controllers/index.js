@@ -23,5 +23,6 @@ define([
         controllers.controller("dashboardController",dashboardController);
         controllers.controller("naviController",naviController);
         controllers.controller("signupController",signupController);
+        console.log(controllers);
     return controllers;
 });

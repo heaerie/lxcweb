@@ -36,8 +36,11 @@ function()
 GenTreeView=function(jsonInput, activeState) {
 	var rtString="";
 	var child=createTreeView(jsonInput,'root');
-
+  try {
 	document.getElementById('treeBase1').appendChild(child);
+  } catch(e) {
+    alert("from GenTreeView" +e);
+  }
 	return  rtString;
 } 
 

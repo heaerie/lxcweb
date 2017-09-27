@@ -2,9 +2,9 @@ define([],function(){
 
 return ['$resource',function  ($resource) {
 	// body...
-	return $resource('/api/createContainer/:action', null,
+	return $resource('/api/container/:action', null,
     {
-         add    : { method:'POST', params:{"action"  : "post"}      }
+         create : { method:'POST', params:{"action"  : "create"}      }
     });
 	
 }

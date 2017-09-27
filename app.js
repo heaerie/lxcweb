@@ -217,8 +217,10 @@ app.post("/api/dashboard/del", function(req, res) {
 });
 
 
-app.get("/create", function(req, res) {
+app.get("/api/container/create", function(req, res) {
     console.log("in create");
+    addCoreFunction(req,function(req){
+    
     client.create(req.query.name, req.query.alias, function(err, container) {
         console.log(req.query);
        if (err) {
@@ -227,16 +229,24 @@ app.get("/create", function(req, res) {
             res.json({success: true, message: req.query.name + " created."});
         }
     });
+});
+});
+ 
+app.post("/api/container/create", function(req, res) {
+   
+    console.log("in create");
+   addCoreFunction(req,function(req){
     
-    /*client.launch(req.query.name, function(err, container) {
-        if (err) res.json({success: false, message: err.getMessage()});
-        else {
-            containers[req.query.name] = container;
-            res.json({success: true, message: "Container launched"});
+    client.create(req.getParam("name") , req.getParam("alias"), function(err, container) {
+        console.log(req.query);
+       if (err) {
+            res.json({success: false, message: err.getMessage()});
+        } else {
+            res.json({success: true, message: req.query.name + " created."});
         }
     });
-*/
-
+});
+   
 });
  
 app.get("/api/dashboard/start", function(req, res) {
