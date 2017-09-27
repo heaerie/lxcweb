@@ -25,7 +25,42 @@ return [ '$scope' , 'toaster','dashboardService','$state','$window',function($sc
 alert('on viewContentLoaded');
 //$scope.getUserDetail();
 });*/
+$scope.startContainer=function(containerName) {
+  dashboardService.start({"name" : containerName}, function (resp) {
+    if (resp.success == true) {
+      toaster.pop('success','Success', JSON.stringify(resp));   
+    } else {
+      toaster.pop('error','Failure', JSON.stringify(resp));
+    }
+    $scope.getContainer();
 
+
+       });
+}
+$scope.deleteContainer=function(containerName) {
+  dashboardService.del({"name" : containerName}, function (resp) {
+    if (resp.success == true) {
+      toaster.pop('success','Success', JSON.stringify(resp));   
+    } else {
+      toaster.pop('error','Failure', JSON.stringify(resp));
+    }
+    $scope.getContainer();
+
+
+       });
+}
+$scope.stopContainer=function(containerName) {
+  dashboardService.stop({"name" : containerName}, function (resp) {
+    if (resp.success == true) {
+      toaster.pop('success','Success', JSON.stringify(resp));
+    } else {
+      toaster.pop('error','Failure', JSON.stringify(resp));
+    }
+   
+    $scope.getContainer();
+
+       });
+}
 $scope.openTerminal=function(host) {
 
    // alert("openTerminal");

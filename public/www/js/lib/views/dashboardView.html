@@ -96,20 +96,7 @@
 																<span class="TreeNodeText">New </span>
 															</div>
 														</div>
-														<div id="td" class="col-md-2 col-sm-4 col-xs-4">
-														<div class="binboxheader">
-															<div id="sendMessageErrorBox"></div>
-																<i class="fa fa-play" aria-hidden="true"></i>
-																<span class="TreeNodeText">start </span>
-															</div>
-														</div>
-														<div id="td" class="col-md-2 col-sm-4 col-xs-4">
-														<div class="binboxheader">
-														<div id="sendMessageErrorBox"></div>
-															<i class="fa fa-trash-o" aria-hidden="true"></i>
-															<span class="TreeNodeText">Delete </span>
-														</div>
-														</div>
+														
 											</div>
 										</div>
 										
@@ -125,21 +112,36 @@
 													<div class="clearfix visible-sm"></div>
 													<div class="clearfix visible-md"></div>
 													
-													<div class="col-md-2 col-sm-3 col-xs-3">
-														<input type="checkbox">
-													</div>
-													<div class="col-md-2 col-sm-3 col-xs-3">
+													<div class="col-md-2 col-sm-6 col-xs-12">
 														<label class="clabel">  {{container.name}} </label>
 													</div>
-													<div class="col-md-2 col-sm-3 col-xs-3">
+													<div class="col-md-2 col-sm-6 col-xs-12">
 														<label class="clabel">  {{container.ipv4}} </label>
 													</div>
-													<div class="col-md-2 col-sm-3 col-xs-3">
+													<div class="col-md-2 col-sm-6 col-xs-12">
 														<label class="clabel">  {{container.state.status}} </label>
 													</div>
 
 										
-													<div ng-show="container.state.status == 'Running'" class="col-md-2 col-sm-3 col-xs-3">
+														<div ng-show="container.state.status == 'Running'" class="col-md-3 col-sm-6 col-xs-12">
+															<label class="clabel"> 
+																<div class="binboxheader" ng-click="stopContainer(container.name)">
+																		<i class="fa fa-power-off" aria-hidden="true"></i>
+																	<span class="TreeNodeText">Stop</span>
+																</div>
+															</label>
+
+														</div>
+													<div ng-show="container.state.status == 'Stopped'" class="col-md-3 col-sm-3 col-xs-3">
+															<label class="clabel"> 
+																<div class="binboxheader" ng-click="startContainer(container.name)">
+																		<i class="fa fa-power-off" aria-hidden="true"></i>
+																	<span class="TreeNodeText">start</span>
+																</div>
+															</label>
+
+														</div>
+														<div ng-show="container.state.status == 'Running'" class="col-md-3 col-sm-6 col-xs-12">
 															<label class="clabel"> 
 																<div class="binboxheader" ng-click="openTerminal(container.ipv4)">
 																		<i class="fa fa-terminal" aria-hidden="true"></i>
@@ -148,6 +150,15 @@
 															</label>
 
 														</div>
+														<div ng-show="container.state.status == 'Stopped'" id="td"  class="col-md-2 col-sm-4 col-xs-4">
+															<label class="clabel"> 
+																<div class="binboxheader" ng-click="deleteContainer(container.name)">
+																		<i class="fa fa-trash-o" aria-hidden="true"></i>
+																	<span class="TreeNodeText">Delete</span>
+																</div>
+															</label>
+														</div>
+
 													</div>
 												</div>
 										</div>

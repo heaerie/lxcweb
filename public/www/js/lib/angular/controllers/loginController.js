@@ -6,7 +6,7 @@ function()
 
     $scope.login=function()
     {
-      alert("login control");
+    //  alert("login control");
     }
 
 	$scope.uss_submit=function() {
@@ -56,7 +56,7 @@ function()
             $state.go('dashboard');
         
 
-       alert("I am in uss_submit");
+     //  alert("I am in uss_submit");
       };
       $scope.uss_auth=function()
       {

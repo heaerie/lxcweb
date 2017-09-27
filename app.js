@@ -3,9 +3,92 @@ var express = require("express");
 var lxd = require("node-lxd");
 var client = lxd();
 var app = express();
- 
+ var bodyParser = require('body-parser');
+var requestIp = require('request-ip');
+var useragent = require('useragent');
+var geoip = require('geoip-lite');
+var cookieParser  = require('cookie-parser');
+
 var containers = {};
  
+/*
+    it has dependant with bodyparse json
+*/
+ function addCoreFunction(req,callback) {
+
+    req.getHeader=function(arg)
+    {
+
+        var retVal="";
+        try
+        {
+            retVal=req.headers[arg]
+        }
+        catch(e)
+        {
+
+            retVal="";
+        }
+        return retVal;
+
+    }
+
+    req.setHeader=function(arg,value)
+    {
+
+        
+        try
+        {
+            req.headers[arg]=value;
+        }
+        catch(e)
+        {
+
+            retVal="";
+        }
+        //return retVal;
+
+    }
+
+
+    req.getParam = function(arg) {
+        var retVal="";
+        if(req.method == "POST")
+        {
+            try
+            {
+                retVal=req.params[arg] || req.body[arg]  ;  
+            }
+            catch(e)
+            {
+                retVal="";
+            }
+            
+        }
+        else if (req.method == "GET")
+        {
+
+            try
+            {
+                retVal=req.query[arg]  || req.body[arg];    
+            }
+            catch(e)
+            {
+                retVal="";
+            }
+
+        }
+        return retVal;
+    }
+
+    callback(req);
+}
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(bodyParser.json());
+
+
 app.get("/api/dashboard/list", function(req, res) {
 	client.containers(function(err, containers) {
 		if (err) {
@@ -27,6 +110,7 @@ app.get("/api/dashboard/list", function(req, res) {
 });
 
 app.post("/api/dashboard/list", function(req, res) {
+
     client.containers(function(err, containers) {
         if (err) {
             res.json({success: false, message: err.getMessage()});
@@ -45,6 +129,93 @@ app.post("/api/dashboard/list", function(req, res) {
     });
 
 });
+
+
+app.post("/api/dashboard/start", function(req, res) {
+
+    addCoreFunction(req,function(req){
+        console.log("req name:" + req.getParam("name"));
+   client.container(req.getParam("name"), function(err, container) {
+    if (err) {
+        return res.json({success: false, "error" : err});
+    }
+  console.log("container's ip: " + container.state());
+  state=container.state();
+  if (state.status == "Stopped") {
+    container.start(function(err) {
+        if (err) {
+            console.log(err);
+          return  res.json({success: false, "error" : err});
+        }
+
+        res.json({success: true, "state" : container.state()});
+
+    });
+  } else {
+   return res.json({success: false, "error" : "Container is not in  Stopped state"});
+  }
+  
+});
+});
+
+});
+app.post("/api/dashboard/stop", function(req, res) {
+
+    addCoreFunction(req,function(req){
+        console.log("req name:" + req.getParam("name"));
+   client.container(req.getParam("name"), function(err, container) {
+    if (err) {
+        return res.json({success: false, "error" : err});
+    }
+  console.log("container's ip: " + container.state());
+  state=container.state();
+  if (state.status == "Running") {
+    container.stop(function(err) {
+        if (err) {
+            console.log(err);
+          return  res.json({success: false, "error" : err});
+        }
+
+        res.json({success: true, "state" : container.state()});
+
+    });
+  } else {
+   return res.json({success: false, "error" : "Container is not in Running state"});
+  }
+  
+});
+});
+
+});
+app.post("/api/dashboard/del", function(req, res) {
+
+    addCoreFunction(req,function(req){
+        console.log("req name:" + req.getParam("name"));
+   client.container(req.getParam("name"), function(err, container) {
+    if (err) {
+        return res.json({success: false, "error" : err});
+    }
+  console.log("container's ip: " + container.state());
+  state=container.state();
+  if (state.status == "Stopped") {
+    container.delete(function(err) {
+        if (err) {
+            console.log(err);
+          return  res.json({success: false, "error" : err});
+        }
+
+        res.json({success: true, "state" : container.state()});
+
+    });
+  } else {
+   return res.json({success: false, "error" : "Container is not in Running state"});
+  }
+  
+});
+});
+
+});
+
 
 app.get("/create", function(req, res) {
     console.log("in create");
@@ -68,20 +239,31 @@ app.get("/create", function(req, res) {
 
 });
  
-app.get("/run", function(req, res) {
-	console.log(containers);	
-   if (!containers.hasOwnProperty(req.query.name)) {
-        res.json({success: false, message: req.query.name +  " Container does not exist"});
-        return;
+app.get("/api/dashboard/start", function(req, res) {
+
+ client.container(req.query.name, function(err, container) {
+    if (err) {
+        return res.json({success: false, "error" : err});
     }
- 
-    containers[req.query.name].run(req.query.cmd.split(" "), function(err, stdOut, stdErr) {
-        if (err) res.json({success: false, message: err.getMessage()});
-        else if (stdErr.length > 0) res.json({success: false, message: stdErr});
-        else {
-            res.json({success: true, message: stdOut});
+  console.log("container's ip: " + container.state());
+  state=container.state();
+  if (state.status == "Stopped") {
+    container.start(function(err) {
+        if (err) {
+            console.log(err);
+          return  res.json({success: false, "error" : err});
         }
+
+        res.json({success: true, "state" : container.state()});
+
     });
+  } else {
+   return res.json({success: false, "error" : "Container is not Stopped state"});
+  }
+  
+});
+
+
 });
 
 app.use(express.static(__dirname+'/public'));

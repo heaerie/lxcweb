@@ -21,6 +21,8 @@
   "homepage": "https://github.com/heaerie/lxcweb#readme",
   "dependencies": {
     "express": "^4.15.4",
-    "node-lxd": "^0.2.8"
+    "node-lxd": "^0.2.8",
+    "request-ip": "^2.0.2",
+    "useragent": "^2.2.1"
   }
 }
