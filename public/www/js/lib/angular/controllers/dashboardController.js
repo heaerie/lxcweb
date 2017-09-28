@@ -29,15 +29,20 @@ alert('on viewContentLoaded');
 //$scope.getUserDetail();
 });*/
 $scope.startContainer=function(containerName) {
-  dashboardService.start({"name" : containerName}, function (resp) {
+    $scope.inprogress=true;
+    dashboardService.start({"name" : containerName}, function (resp) {
+
+
     if (resp.success == true) {
       toaster.pop('success','Success', JSON.stringify(resp));   
     } else {
       toaster.pop('error','Failure', JSON.stringify(resp));
     }
-    $scope.getContainer();
 
+    setTimeout($scope.getContainer,5000);
 
+    $scope.inprogress=false;
+ 
        });
 }
 $scope.deleteContainer=function(containerName) {

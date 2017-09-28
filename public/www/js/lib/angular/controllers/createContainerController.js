@@ -4,9 +4,18 @@ define([], function() {
 		function($scope, createContainerService, toaster,  $state, $window) {
 
    $scope.createContainer=function(){
+
+        $scope.inprogress = true;
+
       createContainerService.create({name: $scope.container.name, alias : $scope.container.image}, function (resp) {
-            toaster.pop('success','this', JSON.stringify(resp));
-         });
+              if (resp.success == true) {
+              toaster.pop('success','Success', JSON.stringify(resp));   
+              } else {
+              toaster.pop('error','Failure', JSON.stringify(resp));
+              }
+              $scope.inprogress = false;
+             });
+     $scope.inprogress = false;
 
    }
 
