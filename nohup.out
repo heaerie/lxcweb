@@ -1,0 +1,153 @@
+listening on port 3000
+in create
+{}
+req name:Murali
+container's ip: [object Object]
+in create
+{}
+in create
+{}
+in create
+{}
+req name:Venkata1
+container's ip: [object Object]
+in create
+{}
+in create
+{}
+in create
+{}
+req name:rajini
+container's ip: [object Object]
+{ _message: 'database or disk is full',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+req name:durai
+container's ip: [object Object]
+req name:first
+container's ip: [object Object]
+req name:first
+container's ip: [object Object]
+req name:rajini
+container's ip: [object Object]
+req name:test
+container's ip: [object Object]
+req name:test
+container's ip: [object Object]
+req name:durai
+container's ip: [object Object]
+req name:agalya
+container's ip: [object Object]
+req name:ram
+container's ip: [object Object]
+req name:ram
+container's ip: [object Object]
+in create
+{}
+in create
+{}
+req name:host1
+container's ip: [object Object]
+in create
+{}
+listening on port 80
+req name:Murali
+container's ip: [object Object]
+req name:Murali
+container's ip: [object Object]
+in create
+{}
+in create
+{}
+in create
+{}
+in create
+{}
+in create
+{}
+req name:test
+container's ip: [object Object]
+listening on port 80
+in create
+{}
+req name:Durai
+container's ip: [object Object]
+in create
+{}
+in create
+{}
+req name:Durai3
+container's ip: [object Object]
+req name:test
+container's ip: [object Object]
+req name:test
+container's ip: [object Object]
+req name:host1
+container's ip: [object Object]
+req name:host1
+container's ip: [object Object]
+req name:Durai3
+container's ip: [object Object]
+req name:Durai
+container's ip: [object Object]
+in create
+{}
+req name:Durai
+container's ip: [object Object]
+req name:Durai3
+container's ip: [object Object]
+req name:Host1
+container's ip: [object Object]
+req name:Murali
+container's ip: [object Object]
+in create
+{}
+in create
+in create
+{}
+{}
+in create
+{}
+listening on port 80
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+in create
+snapshots
+[]
+{}
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+req name:ritick
+snapshots
+[]
+container's ip: [object Object]
+_http_outgoing.js:335
+    throw new Error('Can\'t set headers after they are sent.');
+    ^
+
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:335:11)
+    at ServerResponse.header (/home/ubuntu/node/lxcweb/lxcweb/node_modules/express/lib/response.js:730:10)
+    at ServerResponse.send (/home/ubuntu/node/lxcweb/lxcweb/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/home/ubuntu/node/lxcweb/lxcweb/node_modules/express/lib/response.js:256:15)
+    at /home/ubuntu/node/lxcweb/lxcweb/app.js:151:13
+    at /home/ubuntu/node/lxcweb/lxcweb/node_modules/node-lxd/src/classes/Container.js:608:25
+    at /home/ubuntu/node/lxcweb/lxcweb/node_modules/node-lxd/src/classes/Container.js:468:6
+    at Request._callback (/home/ubuntu/node/lxcweb/lxcweb/node_modules/node-lxd/src/classes/Client.js:464:25)
+    at Request.self.callback (/home/ubuntu/node/lxcweb/lxcweb/node_modules/request/request.js:199:22)
+    at emitTwo (events.js:87:13)

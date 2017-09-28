@@ -242,13 +242,26 @@ app.post("/api/container/create", function(req, res) {
        if (err) {
             res.json({success: false, message: err.getMessage()});
         } else {
-            res.json({success: true, message: req.query.name + " created."});
+            res.json({success: true, message: req.getParam("name") + " created."});
         }
     });
 });
    
 });
  
+app.get("/api/container/images", function(req, res) {
+	addCoreFunction(req,function(req){
+		client.images(function(err, images) {
+		   if (err) {
+				res.json({success: false, message: err.getMessage()});
+			} else {
+				console.log(images);
+				res.json({success: true });
+			}
+		});
+	});
+});
+
 app.get("/api/dashboard/start", function(req, res) {
 
  client.container(req.query.name, function(err, container) {
@@ -278,7 +291,7 @@ app.get("/api/dashboard/start", function(req, res) {
 
 app.use(express.static(__dirname+'/public'));
  
-app.listen(3000, function(err) {
+app.listen(80, function(err) {
     if (!err)
-        console.log( "listening on port 3000");
+        console.log( "listening on port 80");
 });
