@@ -62,52 +62,56 @@
 </style>
 
 <div class="row tableRow " >
-							<div id="td" class="col-md-12 col-sm-12 col-xs-12">
-								<!--div class="pageLayout ng-scope"--> 
-									<div class="bcontainer">
-										<div id="" class="bheader" tabindex="-1">
-											<div class="row tableRow " style="margin-left: 0px;margin-right: 0px;" tabindex="-1">
-														    <div class="clearfix visible-xs"></div>
-															<div class="clearfix visible-sm"></div>
-															<div class="clearfix visible-md"></div>
-											
-														<div id="td" class="col-md-6 col-sm-6 col-xs-12">
-														<div class="binboxheader" ng-click="createContainer()">
-															<div id="sendMessageErrorBox"></div>
-																<i class="fa fa-plus" aria-hidden="true"></i> 
-																<span class="TreeNodeText">Create Container  </span>
-																<span ng-show="inprogress == true"> 
-																	<img src="../img/loading.gif" heigth="15" width="15"></img> 
-															</span>
-														</div>
-														
-			
+				<div id="td" class="col-md-12 col-sm-12 col-xs-12">
+					<!--div class="pageLayout ng-scope"--> 
+						<div class="bcontainer">
+							<div id="" class="bheader" tabindex="-1">
+								<div class="row tableRow " style="margin-left: 0px;margin-right: 0px;" tabindex="-1">
+											    <div class="clearfix visible-xs"></div>
+												<div class="clearfix visible-sm"></div>
+												<div class="clearfix visible-md"></div>
+								
+											<div id="td" class="col-md-6 col-sm-6 col-xs-12">
+											<div class="binboxheader" ng-click="createContainer()">
+												<div id="sendMessageErrorBox"></div>
+													<i class="fa fa-plus" aria-hidden="true"></i> 
+													<span class="TreeNodeText">Create Container  </span>
+													<span ng-show="inprogress == true"> 
+														<img src="../img/loading.gif" heigth="15" width="15"></img> 
+												</span>
 											</div>
+											
 
-										</div>
-										
-										<div id="row tableRow" class="bsession" tabindex="-1">	
-											<div class="clearfix visible-xs"></div>
-											<div class="clearfix visible-sm"></div>
-											<div class="clearfix visible-md"></div>
-												
-													<div class="row tableRow"></div>
-												
-													<div class="row tableRow">
-													<div class="clearfix visible-xs"></div>
-													<div class="clearfix visible-sm"></div>
-													<div class="clearfix visible-md"></div>
-													
-													<div class="col-md-6 col-sm-6 col-xs-12">
-														<span class="clabel">  Container Name  </span>
-														<input type="text" name="input" ng-model="container.name">
-           											</div>
-													<div class="col-md-6 col-sm-6 col-xs-12">
-														<span class="clabel">  Image  </span>
-														<input type="text" name="input" ng-model="container.image">
-											        </div>
-									</div>
-									</div>
-									</div>
-									</div>
-									</div>
+								</div>
+
+							</div>
+							
+							<div id="row tableRow" class="bsession" tabindex="-1">	
+							<div class="clearfix visible-xs"></div>
+							<div class="clearfix visible-sm"></div>
+							<div class="clearfix visible-md"></div>
+
+							<div class="row tableRow"></div>
+
+							<div class="row tableRow">
+							<div class="clearfix visible-xs"></div>
+							<div class="clearfix visible-sm"></div>
+							<div class="clearfix visible-md"></div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+							<span class="clabel">  Container Name  </span>
+							<input type="text" name="input" ng-model="container.name">
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+
+									
+										<SELECT ng-model="container.image" >
+					
+											<OPTION  data-ng-repeat="image in images" ng-value="image.aliases[0].name">{{image.properties.architecture + '-' + image.properties.description}}</OPTION>
+										</SELECT>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

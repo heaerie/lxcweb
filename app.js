@@ -249,14 +249,13 @@ app.post("/api/container/create", function(req, res) {
    
 });
  
-app.get("/api/container/images", function(req, res) {
+app.post("/api/container/images", function(req, res) {
 	addCoreFunction(req,function(req){
 		client.images(function(err, images) {
 		   if (err) {
 				res.json({success: false, message: err.getMessage()});
 			} else {
-				console.log(images);
-				res.json({success: true });
+				res.json({success: true, images: images });
 			}
 		});
 	});

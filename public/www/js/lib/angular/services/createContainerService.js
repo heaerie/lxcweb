@@ -5,6 +5,7 @@ return ['$resource',function  ($resource) {
 	return $resource('/api/container/:action', null,
     {
          create : { method:'POST', params:{"action"  : "create"}      }
+         , images : { method:'POST', params:{"action"  : "images"}      }
     });
 	
 }

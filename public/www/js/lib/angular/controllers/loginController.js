@@ -24,7 +24,7 @@ function()
 
                var   entitlement=  [
                 {
-                  'link' :'dashboard'
+                 'link' :'dashboard'
                 ,'linkName' :'Home'
                 ,'uid' :'dashboard'
                 , 'dataType' :'CONTAINER'
@@ -35,19 +35,16 @@ function()
                     ,'uid'  :'dashboard2'
                     , 'dataType' :'NODE'
                     ,'child'  : []
-                    }
-                    ,
+                    },
                     {
-                    'link' :'createContainer'
-
+                     'link' :'createContainer'
                     ,'linkName' :'Create Container'
                     ,'uid'  :'createContainer'
                     , 'dataType' :'NODE'
                     ,'child'  : []
                     }
                   ]
-                }
-                         
+                }          
               ];
 
           $window.sessionStorage.setItem( "treeViewJson" ,JSON.stringify(entitlement));

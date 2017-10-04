@@ -22,7 +22,14 @@ define([], function() {
 
   $scope.$watch('$viewContentLoaded', function() {
   
-
+      createContainerService.images({}, function(resp) {
+         if (resp.success == true) {
+          toaster.pop('success','Success', JSON.stringify(resp)); 
+          $scope.images=resp.images;
+         } else {
+              toaster.pop('error','Failure', JSON.stringify(resp));
+         }
+      });
 
     });
 	
