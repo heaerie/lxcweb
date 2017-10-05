@@ -8,11 +8,21 @@ define([], function() {
         $scope.inprogress = true;
 
       createContainerService.create({name: $scope.container.name, alias : $scope.container.image}, function (resp) {
+              if ($scope.container.name == "") {
+                toaster.pop('error','Failure', "Name is mandatory");
+                return false;
+              }
+
+               if ($scope.container.image == "") {
+                toaster.pop('error','Failure', "Image is mandatory");
+                return false;
+              }
+
               if (resp.success == true) {
-              toaster.pop('success','Success', JSON.stringify(resp));   
-              setTimeout(function(){$state.go("dashboard");},5000);
+                toaster.pop('success','Success', JSON.stringify(resp));   
+                setTimeout(function(){$state.go("dashboard");},5000);
               } else {
-              toaster.pop('error','Failure', JSON.stringify(resp));
+                toaster.pop('error','Failure', JSON.stringify(resp));
               }
               $scope.inprogress = false;
              });
