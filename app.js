@@ -8,6 +8,7 @@ var requestIp = require('request-ip');
 var useragent = require('useragent');
 var geoip = require('geoip-lite');
 var cookieParser  = require('cookie-parser');
+var config  = require('./config.json');
 
 var containers = {};
  
@@ -101,9 +102,11 @@ app.get("/api/dashboard/list", function(req, res) {
 				    , ipv4 :obj.ipv4()
 				    , ipv6 :obj.ipv6()
                     , state : obj.state()
+                    , server : config.host
+		
 				});
 			});
-			res.json({success: true, "containers": out, "server" : "localhost"});
+			res.json({success: true, "containers": out, "server" : config.host});
 		}
 	});
 
@@ -122,6 +125,7 @@ app.post("/api/dashboard/list", function(req, res) {
                     , ipv4 :obj.ipv4()
                     , ipv6 :obj.ipv6()
                     , state : obj.state()
+                    , server : config.host
                 });
             });
             res.json({success: true, "containers": out});

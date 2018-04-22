@@ -69,10 +69,10 @@ $scope.stopContainer=function(containerName) {
 
        });
 }
-$scope.openTerminal=function(host) {
+$scope.openTerminal=function(server,host) {
 
    // alert("openTerminal");
-    window.open("http://localhost:3001/wetty/terminal/" + host + "/ubuntu");
+    window.open("http://" + server +":3001/wetty/terminal/" + host + "/ubuntu");
 }
 
   angular.element(document).ready(function () {
