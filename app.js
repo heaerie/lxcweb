@@ -152,9 +152,10 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
             if (state.status == "Running") {
                 console.log("in R:002 ###");
                 const cmd = ["ls -lrt"];
-                console.log("in R:004 ###" + cmd);
+                console.log("in R:004 ###:" + cmd);
                 
                 container.run(cmd, function (err, stdOut, stdErr) {
+                    console.log("in R:004.001 ###:" + err, stdErr, stdOut);
                     if (err) res.json({
                         success: false,
                         "error": err
