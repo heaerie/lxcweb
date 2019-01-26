@@ -82,8 +82,9 @@ define([], function () {
     }
 
 
-    $scope.restPassword = function (server, host) {
+    $scope.restPassword = function (server, containerName) {
       dashboardService.resetPassword({
+        "server": server,
         "name": containerName
       }, function (resp) {
         if (resp.success == true) {
