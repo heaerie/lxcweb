@@ -139,20 +139,19 @@ app.post("/api/dashboard/resetPassword", function(req, res) {
     addCoreFunction(req,function(req){
 
         console.log("resetPassword req name:" + req.getParam("name"));
-        /*
+        
         if (!client.containers.hasOwnProperty(req.getParam("name"))) {
             res.json({success: false, message: "Container does not exist"});
             return;
         }
      
-        containers[req.getParam("name")].run("passwd ubuntu\n@india123\n@india123", function(err, stdOut, stdErr) {
+        containers[req.getParam("name")].run("sudo passwd ubuntu\n@india123\n@india123", function(err, stdOut, stdErr) {
             if (err) res.json({success: false, message: err.getMessage()});
             else if (stdErr.length > 0) res.json({success: false, message: stdErr});
             else {
                 res.json({success: true, message: stdOut});
             }
         });
-        */
 
     });
   
