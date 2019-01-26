@@ -145,54 +145,8 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
             }
             console.log("container's ip: " + container.state());
             state = container.state();
-            if (state.status == "Stopped") {
-                container.start(function (err) {
-                    if (err) {
-                        console.log(err);
-                        return res.json({
-                            success: false,
-                            "error": err
-                        });
-                    }
-
-                    res.json({
-                        success: true,
-                        "state": container.state()
-                    });
-
-                });
-            } else {
-                return res.json({
-                    success: false,
-                    "error": "Container is not in  Stopped state"
-                });
-            }
-
-        });
-    });
-
-
-       
-
-});
-
-
-
-app.post("/api/dashboard/start", function (req, res) {
-
-    addCoreFunction(req, function (req) {
-        console.log("req name:" + req.getParam("name"));
-        client.container(req.getParam("name"), function (err, container) {
-            if (err) {
-                return res.json({
-                    success: false,
-                    "error": err
-                });
-            }
-            console.log("container's ip: " + container.state());
-            state = container.state();
             if (state.status == "Running") {
-                container.run(["sudo passwd ubuntu" , "@india123", "@india123"], function (err, stdOut, stdErr) {
+                container.run(["sudo passwd ubuntu", "@india123", "@india123"], function (err, stdOut, stdErr) {
                     if (err) res.json({
                         success: false,
                         "error": err.getMessage()
@@ -213,6 +167,49 @@ app.post("/api/dashboard/start", function (req, res) {
                 return res.json({
                     success: false,
                     "error": "Container is not in Running state"
+                });
+            }
+
+        });
+    });
+
+});
+
+
+
+app.post("/api/dashboard/start", function (req, res) {
+
+    addCoreFunction(req, function (req) {
+        console.log("req name:" + req.getParam("name"));
+        client.container(req.getParam("name"), function (err, container) {
+            if (err) {
+                return res.json({
+                    success: false,
+                    "error": err
+                });
+            }
+            console.log("container's ip: " + container.state());
+            state = container.state();
+            if (state.status == "Stopped") {
+                container.start(function (err) {
+                    if (err) {
+                        console.log(err);
+                        return res.json({
+                            success: false,
+                            "error": err
+                        });
+                    }
+
+                    res.json({
+                        success: true,
+                        "state": container.state()
+                    });
+
+                });
+            } else {
+                return res.json({
+                    success: false,
+                    "error": "Container is not in  Stopped state"
                 });
             }
 
