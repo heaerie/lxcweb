@@ -131,6 +131,7 @@
 																</div>
 															</label>
 
+															
 														</div>
 													<div ng-show="container.state.status == 'Stopped'" class="col-md-3 col-sm-6 col-xs-12">
 															<label class="clabel"> 
@@ -140,12 +141,22 @@
 																</div>
 															</label>
 
+
 														</div>
 														<div ng-show="container.state.status == 'Running'" class="col-md-3 col-sm-6 col-xs-12">
 															<label class="clabel"> 
 																<div class="binboxheader" ng-click="openTerminal(container.server, container.ipv4)">
 																		<i class="fa fa-terminal" aria-hidden="true"></i>
 																	<span class="TreeNodeText">Terminal</span>
+																</div>
+															</label>
+
+														</div>
+														<div ng-show="container.state.status == 'Running'" class="col-md-3 col-sm-6 col-xs-12">
+															<label class="clabel"> 
+																<div class="binboxheader" ng-click="restPassword(container.server, container.ipv4)">
+																		<i class="fa fa-terminal" aria-hidden="true"></i>
+																	<span class="TreeNodeText">restPassword</span>
 																</div>
 															</label>
 

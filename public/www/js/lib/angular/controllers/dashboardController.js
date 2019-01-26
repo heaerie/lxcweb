@@ -75,6 +75,10 @@ $scope.openTerminal=function(server,host) {
     window.open("http://" + server +":3001/wetty/terminal/" + host + "/ubuntu");
 }
 
+
+$scope.restPassword=function(server, host) {
+  dashboardService.resetPassword(server, host);
+}
   angular.element(document).ready(function () {
  //   alert('page loading completed');
   });

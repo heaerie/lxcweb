@@ -135,6 +135,29 @@ app.post("/api/dashboard/list", function(req, res) {
 });
 
 
+app.post("/api/dashboard/resetPassword", function(req, res) {
+    addCoreFunction(req,function(req){
+
+        console.log("req name:" + req.getParam("name"));
+        if (!client.containers.hasOwnProperty(req.getParam("name"))) {
+            res.json({success: false, message: "Container does not exist"});
+            return;
+        }
+     
+        containers[req.getParam("name")].run("passwd ubuntu\n@india123\n@india123", function(err, stdOut, stdErr) {
+            if (err) res.json({success: false, message: err.getMessage()});
+            else if (stdErr.length > 0) res.json({success: false, message: stdErr});
+            else {
+                res.json({success: true, message: stdOut});
+            }
+        });
+
+    });
+  
+});
+
+
+
 app.post("/api/dashboard/start", function(req, res) {
 
     addCoreFunction(req,function(req){

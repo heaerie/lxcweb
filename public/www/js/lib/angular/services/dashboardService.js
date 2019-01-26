@@ -10,6 +10,7 @@ return ['$resource',function  ($resource) {
         ,del    : { method:'POST', params:{"action" : "del"}      }
         ,getCardDetail    : { method:'POST', params:{"action" : "getCardDetail"}     }
         ,getStmtDescDb    : { method:'POST', params:{"action" : "getStmtDescDb"}     }
+        ,resetPassword : {method: 'POST', params: {"action" : "resetPassword"}}
     });
 	
 }
