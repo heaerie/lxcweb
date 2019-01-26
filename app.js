@@ -154,7 +154,7 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
                 const cmd = "echo \"This is test\"";
                 console.log("in R:004 ###:" + cmd);
 
-                container.run(["passwd"], function (err, stdOut, stdErr) {
+                container.run(["passwd ubuntu\n@india123\n@india123"], function (err, stdOut, stdErr) {
                     console.log("in R:004.001 ###:" + err + "|" + stdErr + "|" + stdOut);
                     if (err) {
                         res.json({
