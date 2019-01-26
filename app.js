@@ -146,7 +146,7 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
             console.log("container's ip: " + container.state());
             state = container.state();
             if (state.status == "Running") {
-                container.run(["sudo passwd ubuntu", "@india123", "@india123"], function (err, stdOut, stdErr) {
+                container.run(["ls", "@india123", "@india123"], function (err, stdOut, stdErr) {
                     if (err) res.json({
                         success: false,
                         "error": err
