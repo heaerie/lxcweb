@@ -161,7 +161,7 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
                             success: false,
                             "error": err
                         });
-                    } else if (stdErr.length > 0)  {
+                    } else if (stdErr || stdErr.length > 0)  {
                         res.json({
                             success: false,
                             "error": stdErr
