@@ -135,6 +135,8 @@ app.post("/api/dashboard/list", function (req, res) {
 
 app.post("/api/dashboard/resetPassword", function (req, res) {
     addCoreFunction(req, function (req) {
+
+        console.log("in R:001 ###");
         console.log("req name:" + req.getParam("name"));
         client.container(req.getParam("name"), function (err, container) {
             if (err) {
@@ -143,10 +145,15 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
                     "error": err
                 });
             }
-            console.log("container's ip: " + container.state());
+            console.log("in R:002 ###");
+            console.log("container's state: " + container.state());
             state = container.state();
             if (state.status == "Running") {
-                container.run(["ls", "@india123", "@india123"], function (err, stdOut, stdErr) {
+                console.log("in R:002 ###");
+                const cmd = ["ls -lrt"];
+                console.log("in R:004 ###" + cmd);
+                
+                container.run(cmd, function (err, stdOut, stdErr) {
                     if (err) res.json({
                         success: false,
                         "error": err
@@ -164,6 +171,7 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
                 });
 
             } else {
+                console.log("in R:003 ###");
                 return res.json({
                     success: false,
                     "error": "Container is not in Running state"
