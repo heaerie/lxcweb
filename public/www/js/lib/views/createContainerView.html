@@ -103,7 +103,7 @@
 													</div>
 													<div class="col-md-3 col-sm-6 col-xs-12">
 														<SELECT ng-model="container.image" >
-														<OPTION  data-ng-repeat="image in images" ng-value="image.aliases[0].name">{{image.properties.os + "-" + image.properties.version }}</OPTION>
+														<OPTION  data-ng-repeat="image in images" alt={{image.properties.description}} ng-value="image.aliases[0].name">{{image.properties.os + "-" + image.properties.version  }}</OPTION>
 													</SELECT>		
 													</div>
 												
