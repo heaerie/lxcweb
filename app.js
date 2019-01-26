@@ -134,6 +134,7 @@ app.post("/api/dashboard/list", function (req, res) {
 
 
 app.post("/api/dashboard/resetPassword", function (req, res) {
+    console.log("in R:001 ### resetPassword");
     addCoreFunction(req, function (req) {
 
         console.log("in R:001 ###");
