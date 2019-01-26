@@ -14,7 +14,7 @@ yearOffSet=yearOffSet.split('');
 
 var USS=require("ufi.core").USS;
 var XML=require("ufi.xml").XML;
-<!--
+
 
 //alert("import validate");
 
@@ -651,7 +651,7 @@ VAL.prototype.onChangeVal=function (obj)
 	return true;
 	
 }
--->
+
 exports.VAL=VAL;
 
 });
