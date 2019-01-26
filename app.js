@@ -149,7 +149,7 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
                 container.run(["sudo passwd ubuntu", "@india123", "@india123"], function (err, stdOut, stdErr) {
                     if (err) res.json({
                         success: false,
-                        "error": err.getMessage()
+                        "error": err
                     });
                     else if (stdErr.length > 0) res.json({
                         success: false,
