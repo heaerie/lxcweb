@@ -138,7 +138,8 @@ app.post("/api/dashboard/list", function(req, res) {
 app.post("/api/dashboard/resetPassword", function(req, res) {
     addCoreFunction(req,function(req){
 
-        console.log("req name:" + req.getParam("name"));
+        console.log("resetPassword req name:" + req.getParam("name"));
+        /*
         if (!client.containers.hasOwnProperty(req.getParam("name"))) {
             res.json({success: false, message: "Container does not exist"});
             return;
@@ -151,6 +152,7 @@ app.post("/api/dashboard/resetPassword", function(req, res) {
                 res.json({success: true, message: stdOut});
             }
         });
+        */
 
     });
   
