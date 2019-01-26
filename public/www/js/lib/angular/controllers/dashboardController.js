@@ -1,88 +1,105 @@
-define([], function() {
+define([], function () {
 
-return [ '$scope' , 'toaster','dashboardService','$state','$window',function($scope,toaster,dashboardService,$state, $window) {
-  $scope.usrId    =     $window.sessionStorage.getItem("usrId"  );
-  $scope.grpId    =     $window.sessionStorage.getItem("grpId"  );
+  return ['$scope', 'toaster', 'dashboardService', '$state', '$window', function ($scope, toaster, dashboardService, $state, $window) {
+    $scope.usrId = $window.sessionStorage.getItem("usrId");
+    $scope.grpId = $window.sessionStorage.getItem("grpId");
 
-  $scope.getContainer= function() {
+    $scope.getContainer = function () {
 
       dashboardService.list({}, function (resp) {
- //toaster.pop('success','this', JSON.stringify(resp));
+        //toaster.pop('success','this', JSON.stringify(resp));
 
-        $scope.containers=resp.containers;
+        $scope.containers = resp.containers;
         $scope.server = resp.server;
-       });
-  }
-
-  $scope.$watch('$viewContentLoaded', function(){
-    $scope.containers=[];
-    $scope.getContainer();
-
-});
-
-$scope.gotoCreateContainer=function() {
-  $state.go("createContainer");
-}
-/* $scope.$on('$viewChangeSuccess', function(){
-//Here your view content is fully loaded !!
-alert('on viewContentLoaded');
-//$scope.getUserDetail();
-});*/
-$scope.startContainer=function(containerName) {
-    $scope.inprogress=true;
-    dashboardService.start({"name" : containerName}, function (resp) {
-
-
-    if (resp.success == true) {
-      toaster.pop('success','Success', JSON.stringify(resp));   
-    } else {
-      toaster.pop('error','Failure', JSON.stringify(resp));
+      });
     }
 
-    setTimeout($scope.getContainer,5000);
+    $scope.$watch('$viewContentLoaded', function () {
+      $scope.containers = [];
+      $scope.getContainer();
 
-    $scope.inprogress=false;
- 
-       });
-}
-$scope.deleteContainer=function(containerName) {
-  dashboardService.del({"name" : containerName}, function (resp) {
-    if (resp.success == true) {
-      toaster.pop('success','Success', JSON.stringify(resp));   
-    } else {
-      toaster.pop('error','Failure', JSON.stringify(resp));
+    });
+
+    $scope.gotoCreateContainer = function () {
+      $state.go("createContainer");
     }
-    $scope.getContainer();
+    /* $scope.$on('$viewChangeSuccess', function(){
+    //Here your view content is fully loaded !!
+    alert('on viewContentLoaded');
+    //$scope.getUserDetail();
+    });*/
+    $scope.startContainer = function (containerName) {
+      $scope.inprogress = true;
+      dashboardService.start({
+        "name": containerName
+      }, function (resp) {
 
 
-       });
-}
-$scope.stopContainer=function(containerName) {
-  dashboardService.stop({"name" : containerName}, function (resp) {
-    if (resp.success == true) {
-      toaster.pop('success','Success', JSON.stringify(resp));
-    } else {
-      toaster.pop('error','Failure', JSON.stringify(resp));
+        if (resp.success == true) {
+          toaster.pop('success', 'Success', JSON.stringify(resp));
+        } else {
+          toaster.pop('error', 'Failure', JSON.stringify(resp));
+        }
+
+        setTimeout($scope.getContainer, 5000);
+
+        $scope.inprogress = false;
+
+      });
     }
-   
-    $scope.getContainer();
+    $scope.deleteContainer = function (containerName) {
+      dashboardService.del({
+        "name": containerName
+      }, function (resp) {
+        if (resp.success == true) {
+          toaster.pop('success', 'Success', JSON.stringify(resp));
+        } else {
+          toaster.pop('error', 'Failure', JSON.stringify(resp));
+        }
+        $scope.getContainer();
 
-       });
-}
-$scope.openTerminal=function(server,host) {
 
-   // alert("openTerminal");
-    window.open("http://" + server +":3001/wetty/terminal/" + host + "/ubuntu");
-}
+      });
+    }
+    $scope.stopContainer = function (containerName) {
+      dashboardService.stop({
+        "name": containerName
+      }, function (resp) {
+        if (resp.success == true) {
+          toaster.pop('success', 'Success', JSON.stringify(resp));
+        } else {
+          toaster.pop('error', 'Failure', JSON.stringify(resp));
+        }
+
+        $scope.getContainer();
+
+      });
+    }
+    $scope.openTerminal = function (server, host) {
+
+      // alert("openTerminal");
+      window.open("http://" + server + ":3001/wetty/terminal/" + host + "/ubuntu");
+    }
 
 
-$scope.restPassword=function(server, host) {
-  dashboardService.resetPassword(server, host);
-}
-  angular.element(document).ready(function () {
- //   alert('page loading completed');
-  });
-}];
+    $scope.restPassword = function (server, host) {
+      dashboardService.resetPassword({
+        "name": containerName
+      }, function (resp) {
+        if (resp.success == true) {
+          toaster.pop('success', 'Success', JSON.stringify(resp));
+        } else {
+          toaster.pop('error', 'Failure', JSON.stringify(resp));
+        }
+
+        $scope.getContainer();
+
+      });
+    }
+    angular.element(document).ready(function () {
+      //   alert('page loading completed');
+    });
+  }];
 
 });
 
