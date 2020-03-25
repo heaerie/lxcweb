@@ -151,3 +151,41 @@ Error: Can't set headers after they are sent.
     at Request._callback (/home/ubuntu/node/lxcweb/lxcweb/node_modules/node-lxd/src/classes/Client.js:464:25)
     at Request.self.callback (/home/ubuntu/node/lxcweb/lxcweb/node_modules/request/request.js:199:22)
     at emitTwo (events.js:87:13)
+listening on port 80
+snapshots
+[]
+[ '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-25T04:22:58.925681259Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create
+{}
