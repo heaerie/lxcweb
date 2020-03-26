@@ -9,3 +9,5 @@ lxc image alias create trusty 04aac4257341
 # +-------+--------------+--------+---------------------------------------------+--------+----------+-------------------------------+
 # lxc image alias create trusty bf49cef91a41
 
+# create link 
+#  sudo ln -fs /etc/systemd/system/snap.lxd.daemon.unix.socket /var/lib/lxd
