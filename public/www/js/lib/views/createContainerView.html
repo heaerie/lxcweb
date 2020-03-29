@@ -87,7 +87,6 @@
 												
 													<div class="row tableRow"></div>
 												
-													<div class="row tableRow">
 													<div class="clearfix visible-xs"></div>
 													<div class="clearfix visible-sm"></div>
 													<div class="clearfix visible-md"></div>
@@ -102,9 +101,13 @@
 														<label class="clabel ng-binding"> Image </label>
 													</div>
 													<div class="col-md-3 col-sm-6 col-xs-12">
-														<SELECT ng-model="container.image" >
-														<OPTION  data-ng-repeat="image in images" alt={{image.properties.description}} ng-value="image.aliases[0].name">{{image.properties.os + "-" + image.properties.description  }}</OPTION>
+														<SELECT ng-model="container.image" ng-change="onImageChange(this)">
+														<OPTION  data-ng-repeat="image in images" alt={{image.aliases[0].name image.properties.description}} ng-value="image.aliases[0].name">{{image.properties.os }}</OPTION>
 													</SELECT>		
+													</div>
+													<div class="row tableRow">
+													<div class="col-md-3 col-sm-6 col-xs-12">
+													Selected Alias:	<div ng-model="selectedImage"> {{selectedImage}}</div>
 													</div>
 												
 												</div>

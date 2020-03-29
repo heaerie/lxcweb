@@ -30,6 +30,10 @@ define([], function() {
 
    }
 
+  $scope.onImageChange=function(obj) {
+	  $scope.selectedImage =  $scope.container.image;
+  }
+
   $scope.$watch('$viewContentLoaded', function() {
   
       createContainerService.images({}, function(resp) {
