@@ -11,3 +11,13 @@ lxc image alias create trusty 04aac4257341
 
 # create link 
 #  sudo ln -fs /etc/systemd/system/snap.lxd.daemon.unix.socket /var/lib/lxd
+
+ubuntu@ubuntu:~/lxcweb$ lxc exec U19001 bash 
+root@U19001:~# sudo passwd
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+root@U19001:~# sudo passwd ubuntu
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully

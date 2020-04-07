@@ -132,7 +132,6 @@ app.post("/api/dashboard/list", function (req, res) {
 
 });
 
-/*
 app.post("/api/dashboard/resetPassword", function (req, res) {
     console.log("in R:001 ### resetPassword");
     addCoreFunction(req, function (req) {
@@ -151,25 +150,26 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
             state = container.state();
             if (state.status == "Running") {
                 console.log("in R:002 ###");
-                const cmd = "echo \"This is test\"";
+		cmd="lxc list"
                 console.log("in R:004 ###:" + cmd);
 
-                container.exec(["sudo passwd ubuntu\n@india123\n@india123"], function (err, stdOut, stdErr) {
-                    console.log("in R:004.001 ###:" + err + "|" + stdErr + "|" + stdOut);
+                container.exec(["/bin/echo -e \"@india123\n@india123\n@india123\" | passwd ubuntu"], function (err, stdOut, stdErr) {
+			console.log(stdOut);
+			console.log(stdErr);
                     if (err) {
-                        res.json({
+                      return  res.json({
                             success: false,
-                            "error": err
+                            "error": "err"
                         });
                     } else if (stdErr)  {
-                        res.json({
+                      return  res.json({
                             success: false,
-                            "error": stdErr
+                            "error": "stdErr"
                         });
                     } else {
-                        res.json({
+                       return res.json({
                             success: true,
-                            "error": stdOut
+                            "error": "stdOut"
                         });
                     }
                 });
@@ -186,7 +186,6 @@ app.post("/api/dashboard/resetPassword", function (req, res) {
     });
 
 });
-*/
 
 
 app.post("/api/dashboard/start", function (req, res) {
@@ -310,11 +309,12 @@ app.post("/api/dashboard/del", function (req, res) {
 
 });
 
-
+/*
 app.get("/api/container/create", function (req, res) {
     console.log("in create");
     addCoreFunction(req, function (req) {
-
+    console.log(req);
+    console.log(client.create)
         client.create(req.query.name, req.query.alias, function (err, container) {
             console.log(req.query);
             if (err) {
@@ -331,14 +331,16 @@ app.get("/api/container/create", function (req, res) {
         });
     });
 });
+*/
 
 app.post("/api/container/create", function (req, res) {
 
-    console.log("in create");
+    console.log("in create C:001");
     addCoreFunction(req, function (req) {
-
+    	console.log(client.create)
+    	console.log(req.getParam("name"))
+    	console.log(req.getParam("alias"))
         client.create(req.getParam("name"), req.getParam("alias"), function (err, container) {
-            console.log(req.query);
             if (err) {
                 res.json({
                     success: false,
