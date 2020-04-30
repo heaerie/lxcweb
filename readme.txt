@@ -21,3 +21,4 @@ root@U19001:~# sudo passwd ubuntu
 Enter new UNIX password: 
 Retype new UNIX password: 
 passwd: password updated successfully
+nohup npx -p node@8 -p npm@4 node app.js  & 

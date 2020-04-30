@@ -189,3 +189,4854 @@ GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
   uploaded_at: '2020-03-25T04:22:56.213009256Z' }
 in create
 {}
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-25T04:22:58.925681259Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create
+{}
+listening on port 80
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+req name:tes1
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:tes1
+snapshots
+[]
+container's ip: [object Object]
+req name:tes1
+snapshots
+[]
+container's ip: [object Object]
+req name:tes1
+snapshots
+[]
+container's ip: [object Object]
+constructor {
+  _message:
+   'Error deleting storage volume: lstat /var/snap/lxd/common/lxd/storage-pools/local/containers/tes1/rootfs/usr/share/terminfo/p/p12: no such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+constructor {
+  _message:
+   'Error deleting storage volume: Failed to run: btrfs subvolume delete /var/snap/lxd/common/lxd/storage-pools/local/containers/tes1: ERROR: cannot access subvolume /var/snap/lxd/common/lxd/storage-pools/local/containers/tes1: No such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-26T03:11:08.555639943Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+U18001
+ubuntu-ubuntu 18.04 LTS arm64 (release) (20200317)
+in create C:001
+[Function: create]
+U18001
+ubuntu-ubuntu 18.04 LTS arm64 (release) (20200317)
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-26T03:11:08.555639943Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+U18APP001
+ubuntu-ubuntu 18.04 LTS arm64 (release) (20200317)
+in create C:001
+[Function: create]
+U18APP001
+ubuntu-ubuntu 18.04 LTS arm64 (release) (20200317)
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-26T03:11:08.555639943Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+U18APP001
+u18Image
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-27T00:25:39.554050327Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-27T00:25:39.554050327Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+req name:U18APP001
+snapshots
+[]
+container's ip: [object Object]
+constructor {
+  _message:
+   'Error deleting storage volume: lstat /var/snap/lxd/common/lxd/storage-pools/local/containers/U18APP001/rootfs/home/ubuntu/shoppers/node_modules/terser/CHANGELOG.md: no such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+constructor {
+  _message:
+   'Error deleting storage volume: Failed to run: btrfs subvolume delete /var/snap/lxd/common/lxd/storage-pools/local/containers/U18APP001: ERROR: cannot delete \'/var/snap/lxd/common/lxd/storage-pools/local/containers/U18APP001\': No such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+constructor {
+  _message:
+   'Error deleting storage volume: Failed to run: btrfs subvolume delete /var/snap/lxd/common/lxd/storage-pools/local/containers/U18APP001: ERROR: cannot delete \'/var/snap/lxd/common/lxd/storage-pools/local/containers/U18APP001\': No such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-27T00:25:39.554050327Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+snapshots
+[]
+snapshots
+[]
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-27T00:25:39.554050327Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+NASPU18001
+u18Image
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NASPU18001
+snapshots
+[]
+container's ip: [object Object]
+req name:NASPU18001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-28T15:06:32.040266765Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NASPU18001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NASPU18001
+snapshots
+[]
+container's ip: [object Object]
+req name:NASPU18001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[]
+req name:NASPU18001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NASPU18001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-28T15:06:32.040266765Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+NASPU001LX
+u18Image
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NASPU001LX
+snapshots
+[]
+container's ip: [object Object]
+req name:NASPU001LX
+snapshots
+[]
+container's ip: [object Object]
+req name:NASPU001LX
+req name:NASPU001LX
+constructor {
+  _message: 'Common start logic: no such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-28T18:26:59.640608298Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+NAUP16SPR001
+u18Image
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUP16SPR001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-28T18:29:03.29881633Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+NAUBSPR001
+u18Image
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUBSPR001
+snapshots
+[]
+container's ip: [object Object]
+req name:NAUBSPR001
+snapshots
+[]
+container's ip: [object Object]
+req name:NAUBSPR001
+snapshots
+[]
+container's ip: [object Object]
+constructor {
+  _message:
+   'Create container start operation: Instance is busy running a start operation',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+listening on port 80
+listening on port 80
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+in R:001 ### resetPassword
+in R:001 ###
+req name:NAUBSPR001
+snapshots
+[]
+in R:002 ###
+container's state: [object Object]
+in R:002 ###
+in R:004 ###:lxc list
+EventEmitter {
+  _container:
+   constructor {
+     _client:
+      constructor {
+        _local: true,
+        _path: 'http://unix:/var/lib/lxd/unix.socket:/',
+        _wsPath: 'ws+unix:///var/lib/lxd/unix.socket:/',
+        _info: [Object] },
+     _metadata:
+      { architecture: 'aarch64',
+        config: [Object],
+        devices: {},
+        ephemeral: false,
+        profiles: [Array],
+        stateful: false,
+        description: '',
+        created_at: '2020-03-28T18:30:17.207195477Z',
+        expanded_config: [Object],
+        expanded_devices: [Object],
+        name: 'NAUBSPR001',
+        status: 'Running',
+        status_code: 103,
+        last_used_at: '2020-03-28T18:31:59.356535235Z',
+        location: 'ubuntu',
+        type: 'container',
+        state: [Object],
+        snapshots: [] },
+     fs: constructor { _container: [Circular], _base: '' } },
+  _closed: false,
+  _stdIn:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 1245,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 0, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/7eb1141d-29f7-42ad-8119-e62ba49ee71f/websocket?secret=14d97522d0469503c82fdfc32e92ae7aa4a34e55b42df69c0ff677bcbe6bd3e4',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdOut:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 1257,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 1, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/7eb1141d-29f7-42ad-8119-e62ba49ee71f/websocket?secret=a0c053c0f439390605714842d6374f3ce9e555ce27ec74c72cfc6244fcbd0fc1',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdErr:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 1266,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 2, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/7eb1141d-29f7-42ad-8119-e62ba49ee71f/websocket?secret=8d4faa251f96ecea77c98ebb65257c1ac86db5923b71dca97ed2956521d52270',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _control:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], close: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 1275,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 3, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/7eb1141d-29f7-42ad-8119-e62ba49ee71f/websocket?secret=fb6dc2328b385530afef2264f5434606627010874fc238a7c4f0cbea1188ba02',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } } }
+undefined
+req name:NAUBSPR001
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUBSPR001
+snapshots
+[]
+container's ip: [object Object]
+req name:NAUBSPR001
+snapshots
+[]
+container's ip: [object Object]
+constructor {
+  _message:
+   'Error deleting storage volume: lstat /var/snap/lxd/common/lxd/storage-pools/local/containers/NAUBSPR001/rootfs/usr/share/doc/wget: no such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-28T18:30:17.458174734Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+NAUBSPR002
+u18Image
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+in R:001 ### resetPassword
+in R:001 ###
+req name:NAUBSPR002
+snapshots
+[]
+in R:002 ###
+container's state: [object Object]
+in R:003 ###
+req name:NAUBSPR002
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUBSPR002
+snapshots
+[]
+container's ip: [object Object]
+constructor {
+  _message:
+   'Create container start operation: Instance is busy running a start operation',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUBSPR002
+snapshots
+[]
+container's ip: [object Object]
+constructor {
+  _message:
+   'Create container start operation: Instance is busy running a start operation',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUBSPR002
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+in R:001 ### resetPassword
+in R:001 ###
+req name:NAUBSPR002
+snapshots
+[]
+in R:002 ###
+container's state: [object Object]
+in R:002 ###
+in R:004 ###:lxc list
+EventEmitter {
+  _container:
+   constructor {
+     _client:
+      constructor {
+        _local: true,
+        _path: 'http://unix:/var/lib/lxd/unix.socket:/',
+        _wsPath: 'ws+unix:///var/lib/lxd/unix.socket:/',
+        _info: [Object] },
+     _metadata:
+      { architecture: 'aarch64',
+        config: [Object],
+        devices: {},
+        ephemeral: false,
+        profiles: [Array],
+        stateful: false,
+        description: '',
+        created_at: '2020-03-29T19:41:12.988137508Z',
+        expanded_config: [Object],
+        expanded_devices: [Object],
+        name: 'NAUBSPR002',
+        status: 'Running',
+        status_code: 103,
+        last_used_at: '2020-03-29T19:42:43.228573014Z',
+        location: 'ubuntu',
+        type: 'container',
+        state: [Object],
+        snapshots: [] },
+     fs: constructor { _container: [Circular], _base: '' } },
+  _closed: false,
+  _stdIn:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 6835,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 4, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/c70020d2-c1f7-4004-a6eb-72d1c3523175/websocket?secret=875d1351c1605178eb5b9065bce77e9aa30ea6e326e51bfd884a967ec9c5d1a0',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdOut:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 6847,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 5, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/c70020d2-c1f7-4004-a6eb-72d1c3523175/websocket?secret=3bc1fba766681db1702436de19537ee5696c0c4fa9d98177b1a2f573848fad4e',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdErr:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 6856,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 6, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/c70020d2-c1f7-4004-a6eb-72d1c3523175/websocket?secret=0c283b46c22d8be8bfe6b1e2f312f6deff7253116306b981fee1ca9e90227c5d',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _control:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], close: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 6865,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 7, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/c70020d2-c1f7-4004-a6eb-72d1c3523175/websocket?secret=74dd77fc8918dbcdcafea08ad9eecd3c9e151cb8583ae07cba75ba62b1c64410',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } } }
+undefined
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUBSPR002
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+req name:NAUBSPR002
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[]
+in R:001 ### resetPassword
+in R:001 ###
+req name:NAUBSPR002
+snapshots
+[]
+in R:002 ###
+container's state: [object Object]
+in R:002 ###
+in R:004 ###:lxc list
+EventEmitter {
+  _container:
+   constructor {
+     _client:
+      constructor {
+        _local: true,
+        _path: 'http://unix:/var/lib/lxd/unix.socket:/',
+        _wsPath: 'ws+unix:///var/lib/lxd/unix.socket:/',
+        _info: [Object] },
+     _metadata:
+      { architecture: 'aarch64',
+        config: [Object],
+        devices: {},
+        ephemeral: false,
+        profiles: [Array],
+        stateful: false,
+        description: '',
+        created_at: '2020-03-29T19:41:12.988137508Z',
+        expanded_config: [Object],
+        expanded_devices: [Object],
+        name: 'NAUBSPR002',
+        status: 'Running',
+        status_code: 103,
+        last_used_at: '2020-03-29T19:49:59.425647557Z',
+        location: 'ubuntu',
+        type: 'container',
+        state: [Object],
+        snapshots: [] },
+     fs: constructor { _container: [Circular], _base: '' } },
+  _closed: false,
+  _stdIn:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 8335,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 8, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/08676c77-46db-4865-a494-9cbd82a5cbe5/websocket?secret=4062d3c63b1d8a1f581592e28bf8e60b0827b80a23bbf7ac31cf451a352b2a1b',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdOut:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 8347,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 9, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/08676c77-46db-4865-a494-9cbd82a5cbe5/websocket?secret=b15bf79aced8d97b12c4df1230eb320a9fca1d34466abb382629240dcc46c2c3',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdErr:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 8356,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 10, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/08676c77-46db-4865-a494-9cbd82a5cbe5/websocket?secret=c1af21f1d72bdfd223cd51996b4269304aeb1554fdaac4da08e6b92dc871ce25',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _control:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], close: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 8365,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 11, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/08676c77-46db-4865-a494-9cbd82a5cbe5/websocket?secret=945c78edd0d3a447db429fb2d586096e31e51268e9a6e11ef8c363770439c7d1',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } } }
+undefined
+req name:first
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+container's ip: [object Object]
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+req name:first
+snapshots
+[ '/1.0/instances/first/snapshots/basicU16' ]
+container's ip: [object Object]
+req name:first
+snapshots
+[]
+container's ip: [object Object]
+constructor {
+  _message:
+   'Error deleting storage volume: Failed to run: btrfs subvolume delete /var/snap/lxd/common/lxd/storage-pools/local/containers/first: ERROR: cannot access subvolume /var/snap/lxd/common/lxd/storage-pools/local/containers/first: No such file or directory',
+  _status: 'Failure',
+  _statusCode: 400,
+  _innerError: null }
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T19:41:13.197732736Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+in create C:001
+[Function: create]
+NASPUB003
+u18Image
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+req name:NASPUB003
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+in R:001 ### resetPassword
+in R:001 ###
+req name:NASPUB003
+snapshots
+[]
+in R:002 ###
+container's state: [object Object]
+in R:002 ###
+in R:004 ###:lxc list
+EventEmitter {
+  _container:
+   constructor {
+     _client:
+      constructor {
+        _local: true,
+        _path: 'http://unix:/var/lib/lxd/unix.socket:/',
+        _wsPath: 'ws+unix:///var/lib/lxd/unix.socket:/',
+        _info: [Object] },
+     _metadata:
+      { architecture: 'aarch64',
+        config: [Object],
+        devices: {},
+        ephemeral: false,
+        profiles: [Array],
+        stateful: false,
+        description: '',
+        created_at: '2020-03-29T21:43:53.87898223Z',
+        expanded_config: [Object],
+        expanded_devices: [Object],
+        name: 'NASPUB003',
+        status: 'Running',
+        status_code: 103,
+        last_used_at: '2020-03-29T21:44:51.84215983Z',
+        location: 'ubuntu',
+        type: 'container',
+        state: [Object],
+        snapshots: [] },
+     fs: constructor { _container: [Circular], _base: '' } },
+  _closed: false,
+  _stdIn:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function] },
+     _eventsCount: 2,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 23943,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 12, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/20be4051-e7c1-40dc-8a24-49b29c089b7f/websocket?secret=2f22d2183c99557057c77344514a17e2d2e6c22bf6e306bd7b23ab05c1732bcf',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdOut:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 23955,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 13, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/20be4051-e7c1-40dc-8a24-49b29c089b7f/websocket?secret=0d37103bf6cde34394d9dd4d287dee3e5fe0a2af32f13875c0d602069ae41154',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _stdErr:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], message: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 23964,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 14, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/20be4051-e7c1-40dc-8a24-49b29c089b7f/websocket?secret=5999a5f3e5890e00456a7b838310d3ce81ac08f83190ce1a14f207ec94c4c7e4',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } },
+  _control:
+   WebSocket {
+     _events:
+      [Object: null prototype] { error: [Function], open: [Function], close: [Function] },
+     _eventsCount: 3,
+     _maxListeners: undefined,
+     _socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Pipe],
+        _parent: null,
+        _host: null,
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 4,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: true,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: null,
+        timeout: 0,
+        [Symbol(asyncId)]: 23973,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _ultron: Ultron { id: 15, ee: [Socket] },
+     _closeReceived: false,
+     bytesReceived: 0,
+     readyState: 1,
+     supports: { binary: true },
+     extensions: {},
+     _isServer: false,
+     url:
+      'ws+unix:///var/lib/lxd/unix.socket:/1.0/operations/20be4051-e7c1-40dc-8a24-49b29c089b7f/websocket?secret=af05887079a4fef94cd22d330ed00fe3a968d8920fdd8d813f96f90bb111441a',
+     protocolVersion: 13,
+     _receiver:
+      Receiver {
+        fragmentedBufferPool: [BufferPool],
+        unfragmentedBufferPool: [BufferPool],
+        extensions: {},
+        maxPayload: 0,
+        currentPayloadLength: 0,
+        state: [Object],
+        overflow: [],
+        headerBuffer: <Buffer 00 00 00 00 00 00 00 00 00 00>,
+        expectOffset: 0,
+        expectBuffer: <Buffer 00 00>,
+        expectHandler: [Function],
+        currentMessage: [],
+        currentMessageLength: 0,
+        messageHandlers: [],
+        dead: false,
+        processing: false,
+        onerror: [Function: onerror],
+        ontext: [Function: ontext],
+        onbinary: [Function: onbinary],
+        onclose: [Function: onclose],
+        onping: [Function: onping],
+        onpong: [Function: onpong] },
+     _sender:
+      Sender {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        _socket: [Socket],
+        extensions: {},
+        firstFragment: true,
+        compress: false,
+        messageHandlers: [],
+        processing: false } } }
+undefined
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+req name:NASPUB003
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+req name:NASPUB003
+snapshots
+[]
+container's ip: [object Object]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T21:43:54.062167488Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  '/1.0/images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  '/1.0/images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+name=a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+name=b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+GET /images/a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 18.04 LTS arm64 (release) (20200317)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'bionic',
+     serial: '20200317',
+     type: 'squashfs',
+     version: '18.04' },
+  public: false,
+  expires_at: '2023-04-26T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'u18Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-18.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'a85a5f4b9b923fb05b41224160a778cf6acc2aff90ec12983a8698d1611fd4d9',
+  size: 174310160,
+  update_source:
+   { alias: 'default',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-17T00:00:00Z',
+  last_used_at: '2020-03-29T21:43:54.062167488Z',
+  uploaded_at: '2020-03-26T02:53:56.417431803Z' }
+GET /images/b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2
+{ auto_update: true,
+  properties:
+   { architecture: 'arm64',
+     description: 'ubuntu 16.04 LTS arm64 (release) (20200318)',
+     label: 'release',
+     os: 'ubuntu',
+     release: 'xenial',
+     serial: '20200318',
+     type: 'squashfs',
+     version: '16.04' },
+  public: false,
+  expires_at: '2021-04-21T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'trusty', description: '' } ],
+  architecture: 'aarch64',
+  cached: true,
+  filename: 'ubuntu-16.04-server-cloudimg-arm64-lxd.tar.xz',
+  fingerprint:
+   'b66effdf28328b1595c82dc95857deb30450a2766c0f1b242d4460e73bf98bd2',
+  size: 148947788,
+  update_source:
+   { alias: '16.04',
+     certificate: '',
+     protocol: 'simplestreams',
+     server: 'https://cloud-images.ubuntu.com/releases',
+     image_type: '' },
+  type: 'container',
+  created_at: '2020-03-18T00:00:00Z',
+  last_used_at: '2020-03-26T02:52:55.019945939Z',
+  uploaded_at: '2020-03-25T04:22:56.213009256Z' }
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+[ '/1.0/images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  '/1.0/images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1' ]
+name=5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+name=611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+GET /images/5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'U16BasicImage', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '5a60b6746489512f8370783fd26114e60313b27bcd468e6441777a9a02eb5645',
+  size: 241607686,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '2020-03-26T00:52:19.589326685Z',
+  uploaded_at: '2020-03-26T00:19:02.009531758Z' }
+GET /images/611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1
+{ auto_update: false,
+  properties: {},
+  public: false,
+  expires_at: '0001-01-01T00:00:00Z',
+  profiles: [ 'default' ],
+  aliases: [ { name: 'NAUBSPR002.Image', description: '' } ],
+  architecture: 'aarch64',
+  cached: false,
+  filename: '',
+  fingerprint:
+   '611671fba9de4b0255af2523ceb2ae80d4d77200bbf962b647713b6b0aafe0f1',
+  size: 226218474,
+  type: 'container',
+  created_at: '0001-01-01T00:00:00Z',
+  last_used_at: '0001-01-01T00:00:00Z',
+  uploaded_at: '2020-03-29T21:07:40.605669662Z' }
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+snapshots
+[]
+snapshots
+[ '/1.0/instances/NAUBSPR002/snapshots/NAUBSPR002.snapshot' ]
+snapshots
+[]
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EACCES 0.0.0.0:80
+    at Server.setupListenHandle [as _listen2] (net.js:1343:19)
+    at listenInCluster (net.js:1401:12)
+    at Server.listen (net.js:1485:7)
+    at Function.listen (/home/ubuntu/lxcweb/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/ubuntu/lxcweb/app.js:419:5)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
