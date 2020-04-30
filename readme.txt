@@ -22,3 +22,36 @@ Enter new UNIX password:
 Retype new UNIX password: 
 passwd: password updated successfully
 nohup npx -p node@8 -p npm@4 node app.js  & 
+
+config:
+  core.https_address: '[::]:8443'
+  core.trust_password: 'password'
+networks:
+- config:
+    ipv4.address: auto
+    ipv6.address: auto
+  description: ""
+  managed: false
+  name: lxdbr0
+  type: ""
+storage_pools:
+- config: {}
+  description: ""
+  name: default
+  driver: dir
+profiles:
+- config: {}
+  description: ""
+  devices:
+    eth0:
+      name: eth0
+      nictype: bridged
+      parent: lxdbr0
+      type: nic
+    root:
+      path: /
+      pool: default
+      type: disk
+  name: default
+cluster: null
+
