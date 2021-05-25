@@ -55,3 +55,5 @@ profiles:
   name: default
 cluster: null
 
+
+lxc image  import VAUBGPA001_01.tar --alias=VAUBGPA001
